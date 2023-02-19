@@ -24,14 +24,14 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    height: 16rem;
   }
   .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 32rem;
+    height: 16rem;
   }
   
   
@@ -106,3 +106,13 @@ body {
     }
     
   }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  div[name="head"] {
+    background-image: linear-gradient(to right,teal, pink);
+    color: white;
+  }
+
