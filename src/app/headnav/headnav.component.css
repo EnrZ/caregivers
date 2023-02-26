@@ -24,7 +24,11 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 16rem;
+  padding-bottom: 10%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 250px;
   }
   .carousel-item > img {
     position: absolute;
