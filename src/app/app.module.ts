@@ -12,12 +12,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { WhatWeDoExpComponent } from './what-we-do-exp/what-we-do-exp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadnavComponent,
     BootdropComponent,
+    WhatWeDoExpComponent,
     
   ],
   imports: [
