@@ -53,6 +53,7 @@ body {
     .carousel-caption h1 {
         color: black;
     }
+ 
     
     
    /*The location of this matters, when carousel-control etc. were lower in the css, the arrows wouldnt
@@ -68,6 +69,7 @@ body {
     }
   }
   
+
  
 
   h1 {
