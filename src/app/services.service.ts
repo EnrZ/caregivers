@@ -10,7 +10,7 @@ require("dotenv").config();
   providedIn: 'root'
 })
 export class ServicesService {
-  private mailApi = 'https://mailthis.to/${process.env.ALIAS}'
+  private mailApi = `https://mailthis.to/${process.env.ALIAS}`
 
   constructor(private http: HttpClient) { }
 
