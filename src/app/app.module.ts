@@ -14,6 +14,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { WhatWeDoExpComponent } from './what-we-do-exp/what-we-do-exp.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     
   ],
   imports: [
-    BrowserModule, NgbAlertModule,BrowserAnimationsModule,NgbNavModule,FormsModule,ReactiveFormsModule
+    BrowserModule, NgbAlertModule,BrowserAnimationsModule,NgbNavModule,FormsModule,ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
