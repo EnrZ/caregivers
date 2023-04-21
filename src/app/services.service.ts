@@ -4,13 +4,14 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators'
 import { HttpHeaders } from '@angular/common/http'
 
-require("dotenv").config();
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServicesService {
-  private mailApi = `https://mailthis.to/${process.env.ALIAS}`
+  //private mailApi = `https://mailthis.to/${process.env.ALIAS}`
+  private mailApi = 'https://mailthis.to/care'
+
 
   constructor(private http: HttpClient) { }
 

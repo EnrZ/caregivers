@@ -41,7 +41,7 @@ module.exports = "<div name = \"bodydiv\">\n<app-headnav></app-headnav>\n  </div
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-tabs\" name=\"tabs\">\n\t<li [ngbNavItem]=\"1\">\n\t\t<a ngbNavLink>Mission Statement</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p>\n\t\t\tWe strive to offer the highest levewl of professionalism, services, and support to our clients in order that our clients live independently.\n\t\t \n\t\t </p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"2\">\n\t\t<a ngbNavLink>What We Do</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"3\">\n\t\t<a ngbNavLink>Value</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p> \n\t\t \n\t\t </p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"4\">\n\t\t<a ngbNavLink>Vision</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p> People of different generations are heard, valued, and cared for.  Our vision is to become a great trusted name and home care provider of choice in the St. Louis area.  Our experienced and dedicated caregivers will continue to promote well-being through support and active daily interation with our clients and their relatives.</p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"5\">\n\t\t<a ngbNavLink>Contact Us</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<p>\t24 hours a day, seven days a week. </p>\n\t\t\t<p>Phone Number:</p>\n\t\t\t<p>Home Care </p>\n\n\n\t\t\t<p>Schedule your Home Care Assessment</p>\n\t\t\n\t\t\t\t<app-contact-form></app-contact-form>\n\t\t</ng-template>\n\t</li>\n</ul>\n\n<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n\n"
+module.exports = "<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-tabs\" name=\"tabs\">\n\t<li [ngbNavItem]=\"1\">\n\t\t<a ngbNavLink>Mission Statement</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p>\n\t\t\tWe strive to offer the highest level of professionalism, services, and support to our clients in order that our clients live independently.\n\t\t \n\t\t </p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"2\">\n\t\t<a ngbNavLink>What We Do</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"3\">\n\t\t<a ngbNavLink>Value</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p> \n\t\t \n\t\t </p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"4\">\n\t\t<a ngbNavLink>Vision</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p> People of different generations are heard, valued, and cared for.  Our vision is to become a great trusted name and home care provider of choice in the St. Louis area.  Our experienced and dedicated caregivers will continue to promote well-being through support and active daily interation with our clients and their relatives.</p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"5\">\n\t\t<a ngbNavLink>Contact Us</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<p>\t24 hours a day, seven days a week. </p>\n\t\t\t<p>Phone Number:</p>\n\t\t\t<p>Home Care </p>\n\n\n\t\t\t<p>Schedule your Home Care Assessment</p>\n\t\t\n\t\t\t\t<app-contact-form></app-contact-form>\n\t\t</ng-template>\n\t</li>\n</ul>\n\n<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n\n"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ module.exports = "<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Wrapper container -->\n<div class=\"container py-4\">\n\n    <form [formGroup]=\"FormData\" (ngSubmit)=\"onSubmit(FormData.value)\">\n  \n      <div class=\"form-group\">\n      <!-- Name input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"name\">Name</label>\n        <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" />\n      </div>\n  \n      <!-- Email address input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n        <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\" />\n      </div>\n  \n      <!-- Message input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"message\">Message</label>\n        <textarea class=\"form-control\" id=\"message\" type=\"text\" placeholder=\"Message\" style=\"height: 10rem;\"></textarea>\n      </div>\n  \n      <!-- Form submit button -->\n      <div class=\"d-grid\">\n        <button class=\"btn btn-primary btn-lg\" type=\"submit\" [disabled]=\"!FormData.valid\">Submit</button>\n      </div>\n    </div>\n    </form>\n  \n  </div>"
+module.exports = "<!-- Wrapper container -->\n<div class=\"container py-4\">\n\n    <form [formGroup]=\"FormData\" (ngSubmit)=\"onSubmit(FormData.value)\">\n  \n      <div class=\"form-group\">\n      <!-- Name input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"name\">Name</label>\n        <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" \n        name=\"EmailerName\" formControlName=\"EmailerName\"/>\n      </div>\n  \n      <!-- Email address input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n        <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\"\n        name=\"Email\" formControlName=\"Email\" />\n      </div>\n  \n      <!-- Message input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"message\">Message</label>\n        <textarea class=\"form-control\" id=\"message\" type=\"text\" \n        name=\"Message\" formControlName=\"Message\" style=\"height: 10rem;\"></textarea>\n      </div>\n  \n      <!-- Form submit button -->\n      <div class=\"d-grid\">\n        <button class=\"btn btn-primary btn-lg\" type=\"submit\" [disabled]=\"!FormData.valid\">Submit</button>\n      </div>\n    </div>\n    </form>\n  \n  </div>"
 
 /***/ }),
 
@@ -85,7 +85,7 @@ module.exports = "\n    Our experienced and compassionate caregivers are commite
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "div[name=\"bodydiv\"] {\n    font-size: 26px;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0VBQ2pCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXZbbmFtZT1cImJvZHlkaXZcIl0ge1xuICAgIGZvbnQtc2l6ZTogMjZweDtcbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -150,6 +150,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _what_we_do_exp_what_we_do_exp_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./what-we-do-exp/what-we-do-exp.component */ "./src/app/what-we-do-exp/what-we-do-exp.component.ts");
 /* harmony import */ var _contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./contact-form/contact-form.component */ "./src/app/contact-form/contact-form.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
 
 
 
@@ -175,7 +177,8 @@ var AppModule = /** @class */ (function () {
                 _contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_10__["ContactFormComponent"],
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbAlertModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbNavModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbAlertModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbNavModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -256,22 +259,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _services_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services.service */ "./src/app/services.service.ts");
+
 
 
 
 var ContactFormComponent = /** @class */ (function () {
-    function ContactFormComponent(builder) {
+    function ContactFormComponent(builder, contact) {
         this.builder = builder;
+        this.contact = contact;
     }
     ContactFormComponent.prototype.ngOnInit = function () {
         this.FormData = this.builder.group({
-            Fullname: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+            EmailerName: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
             Email: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].email])]),
-            Comment: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required])
+            Message: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required])
+        });
+    };
+    ContactFormComponent.prototype.onSubmit = function (FormData) {
+        console.log(FormData);
+        this.contact.PostMessage(FormData)
+            .subscribe(function (response) {
+            location.href = 'https://mailthis.to/confirm';
+            console.log(response);
+        }, function (error) {
+            console.warn(error.responseText);
+            console.log({ error: error });
         });
     };
     ContactFormComponent.ctorParameters = function () { return [
-        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+        { type: _services_service__WEBPACK_IMPORTED_MODULE_3__["ServicesService"] }
     ]; };
     ContactFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -325,6 +343,58 @@ var HeadnavComponent = /** @class */ (function () {
         })
     ], HeadnavComponent);
     return HeadnavComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services.service.ts":
+/*!*************************************!*\
+  !*** ./src/app/services.service.ts ***!
+  \*************************************/
+/*! exports provided: ServicesService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServicesService", function() { return ServicesService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
+
+
+var ServicesService = /** @class */ (function () {
+    function ServicesService(http) {
+        this.http = http;
+        //private mailApi = `https://mailthis.to/${process.env.ALIAS}`
+        this.mailApi = 'https://mailthis.to/care';
+    }
+    ServicesService.prototype.PostMessage = function (input) {
+        return this.http.post(this.mailApi, input, { responseType: 'text' })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (response) {
+            if (response) {
+                return response;
+            }
+            else {
+                return null;
+            }
+        }, function (error) {
+            return error;
+        }));
+    };
+    ServicesService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    ServicesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        })
+    ], ServicesService);
+    return ServicesService;
 }());
 
 
