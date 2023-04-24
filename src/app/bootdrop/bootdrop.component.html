@@ -1,4 +1,4 @@
-<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs" name="tabs">
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" name="tabs">
 	<li [ngbNavItem]="1">
 		<a ngbNavLink>Mission Statement</a>
 		<ng-template ngbNavContent>
@@ -32,11 +32,11 @@
 		<a ngbNavLink>Contact Us</a>
 		<ng-template ngbNavContent>
 			<p>	24 hours a day, seven days a week. </p>
-			<p>Phone Number:</p>
-			<p>Home Care </p>
-
-
 			<p>Schedule your Home Care Assessment</p>
+
+			<p>Phone Number: (314) 601-4345 </p>
+
+			<p>Email Contact</p>
 		
 				<app-contact-form></app-contact-form>
 		</ng-template>
