@@ -15,6 +15,10 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { WhatWeDoExpComponent } from './what-we-do-exp/what-we-do-exp.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MissionStatementComponent } from './mission-statement/mission-statement.component';
+import { ValueComponent } from './value/value.component';
+import { VisionComponent } from './vision/vision.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { HttpClientModule } from '@angular/common/http';
     BootdropComponent,
     WhatWeDoExpComponent,
     ContactFormComponent,
+    MissionStatementComponent,
+    ValueComponent,
+    VisionComponent,
+    ContactUsComponent,
     
   ],
   imports: [

@@ -41,7 +41,7 @@ module.exports = "<div name = \"bodydiv\">\n<app-headnav></app-headnav>\n  </div
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-pills\" name=\"tabs\">\n\t<li [ngbNavItem]=\"1\">\n\t\t<a ngbNavLink>Mission Statement</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p>\n\t\t\tWe strive to offer the highest level of professionalism, services, and support to our clients in order that our clients live independently.\n\t\t \n\t\t </p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"2\">\n\t\t<a ngbNavLink>What We Do</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"3\">\n\t\t<a ngbNavLink>Value</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p> \n\t\t\tIntegrity - we establish and preserve trust with all clients by applying our knowledge and skills fairly.\n\t\t </p>\n\t\t <p>\n\t\t\tProfessionalism- we are knowledgeable, accurate, conscientious, innovative, and service-oriented.\n\t\t </p>\n\t\t <p>\n\t\t\tRespect- We interact with people in a way that makes them feel heard and valued. We Listen and respond wholeheartedly.\n\t\t </p>\n\t\t <p>\n\t\t\tCollaboration- We recognize and act on opportunities to work together to deliver our company’s best. We consult, and share ideas, fostering innovation to improve the service experience, both internally and externally.\n\t\t </p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"4\">\n\t\t<a ngbNavLink>Vision</a>\n\t\t<ng-template ngbNavContent>\n\t\t <p> People of different generations are heard, valued, and cared for.  Our vision is to become a great trusted name and home care provider of choice in the St. Louis area.  Our experienced and dedicated caregivers will continue to promote well-being through support and active daily interation with our clients and their relatives.</p>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"5\">\n\t\t<a ngbNavLink>Contact Us</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<p>\t24 hours a day, seven days a week. </p>\n\t\t\t<p>Schedule your Home Care Assessment</p>\n\n\t\t\t<p>Phone Number: (314) 601-4345 </p>\n\n\t\t\t<p>Email Contact</p>\n\t\t\n\t\t\t\t<app-contact-form></app-contact-form>\n\t\t</ng-template>\n\t</li>\n</ul>\n\n<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n\n"
+module.exports = "\n<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-pills\" name=\"tabs\">\n\t<li [ngbNavItem]=\"1\">\n\t\t<a ngbNavLink>Mission Statement</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<app-mission-statement></app-mission-statement>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"2\">\n\t\t<a ngbNavLink>What We Do</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"3\">\n\t\t<a ngbNavLink>Value</a>\n\t\t<ng-template ngbNavContent>\n\t\t\t<app-value></app-value>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"4\">\n\t\t<a ngbNavLink>Vision</a>\n\t\t<ng-template ngbNavContent>\n\t\t<app-vision></app-vision>\n\t\t</ng-template>\n\t</li>\n\t<li [ngbNavItem]=\"5\">\n\t\t<a ngbNavLink>Contact Us</a>\n\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-contact-us></app-contact-us>\n\t\t\t\t<app-contact-form></app-contact-form>\n\t\t</ng-template>\n\t</li>\n</ul>\n\n<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n"
 
 /***/ }),
 
@@ -56,6 +56,17 @@ module.exports = "<!-- Wrapper container -->\n<div class=\"container py-4\">\n\n
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/contact-us/contact-us.component.html":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/contact-us/contact-us.component.html ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class = \"container\">\n    24 hours a day, seven days a week.\n    <br>\n    <br>\n    Schedule your Home Care Assessment\n    <br>\n    <br>\n    Phone Number: (314) 601-4345\n    <br>\n    <br>\n    Email Contact\n    <br>\n    <br>\n</div>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/headnav/headnav.component.html":
 /*!**************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/headnav/headnav.component.html ***!
@@ -63,7 +74,40 @@ module.exports = "<!-- Wrapper container -->\n<div class=\"container py-4\">\n\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "  \n\t<div class =\"p-5 mb-4 bg-light rounded-3\" name=\"head\">\n        <div class=\"container-fluid py-5\">\n          <p>WORK IN PROGRESS WEBSITE</p>\n          <div class=\"text-center\"> <h1>St. Louis Angelic Caregivers</h1></div>\n</div></div>\n\n<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n  <div class=\"carousel-indicators\">\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>\n  </div>\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <svg class=\"bd-placeholder-img\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/></svg>\n     \n      <div class=\"d-flex justify-content-center\"><img src=\"assets/20230307_160528_sized.jpg\" alt=\"care pic 1\"></div>\n  \n      \n    </div>\n    <div class=\"carousel-item\">\n      <svg class=\"bd-placeholder-img\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/></svg>\n      <div class=\"d-flex justify-content-center\"><img src=\"assets/20230424_073207.jpg\" alt=\"care pic 2\"></div>\n    \n      <div class=\"container\">\n        <div class=\"carousel-caption\">\n        </div>\n      </div>\n    </div>\n    <div class=\"carousel-item\">\n  <!carousel background color was here while font color is done in css>\n      <svg class=\"bd-placeholder-img\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/></svg>\n      <div class=\"d-flex justify-content-center\"><img src=\"assets/20230307_160528_sized.jpg\" alt=\"care pic 3\"></div>\n      <div class=\"container\">\n        <div class=\"carousel-caption text-end\">\n          \n        </div>\n      </div>\n    </div>\n  </div>\n  <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"visually-hidden\">Previous</span>\n  </button>\n  <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"visually-hidden\">Next</span>\n  </button>\n</div>\n\n<div name =\"angbar\">\n  \n  <app-bootdrop></app-bootdrop>\n  </div>"
+module.exports = "  \n\t<div class =\"p-5 mb-4 bg-light rounded-3\" name=\"head\">\n        <div class=\"container-fluid py-5\">\n          <p>WORK IN PROGRESS WEBSITE</p>\n          <div class=\"text-center\"> <h1>St. Louis Angelic Caregivers</h1></div>\n</div></div>\n\n<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n  <div class=\"carousel-indicators\">\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>\n  </div>\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <svg class=\"bd-placeholder-img\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/></svg>\n     \n      <div class=\"d-flex justify-content-center\"><img src=\"assets/20230307_160528_sized.jpg\" alt=\"care pic 1\"></div>\n  \n      \n    </div>\n    <div class=\"carousel-item\">\n      <svg class=\"bd-placeholder-img\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/></svg>\n      <div class=\"d-flex justify-content-center\"><img src=\"assets/20230424_073207.jpg\" alt=\"care pic 2\"></div>\n    \n      <div class=\"container\">\n        <div class=\"carousel-caption\">\n        </div>\n      </div>\n    </div>\n    <div class=\"carousel-item\">\n  <!carousel background color was here while font color is done in css>\n      <svg class=\"bd-placeholder-img\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/></svg>\n      <div class=\"d-flex justify-content-center\"><img src=\"assets/20230307_160528_sized.jpg\" alt=\"care pic 3\"></div>\n      <div class=\"container\">\n        <div class=\"carousel-caption text-end\">\n          \n        </div>\n      </div>\n    </div>\n  </div>\n  <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"visually-hidden\">Previous</span>\n  </button>\n  <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"visually-hidden\">Next</span>\n  </button>\n</div>\n\n<div name =\"angbar\">\n\n  <app-bootdrop></app-bootdrop>\n  </div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/mission-statement/mission-statement.component.html":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/mission-statement/mission-statement.component.html ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class = \"container\">\nWe strive to offer the highest level of professionalism, services, and support to our clients in order that our clients live independently.\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/value/value.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/value/value.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class = \"container\">\n    \n        Integrity - we establish and preserve trust with all clients by applying our knowledge and skills fairly.\n     <br>\n     <br>\n        Professionalism- we are knowledgeable, accurate, conscientious, innovative, and service-oriented.\n     <br>\n     <br>\n        Respect- We interact with people in a way that makes them feel heard and valued. We Listen and respond wholeheartedly.\n     <br>\n     <br>\n        Collaboration- We recognize and act on opportunities to work together to deliver our company’s best. We consult, and share ideas, fostering innovation to improve the service experience, both internally and externally.\n     \n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/vision/vision.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/vision/vision.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class = \"container\">\nPeople of different generations are heard, valued, and cared for. Our vision is to become a great trusted name and home care provider of choice in the St. Louis area. Our experienced and dedicated caregivers will continue to promote well-being through support and active daily interation with our clients and their relatives.\n</div>"
 
 /***/ }),
 
@@ -74,7 +118,7 @@ module.exports = "  \n\t<div class =\"p-5 mb-4 bg-light rounded-3\" name=\"head\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n    Our experienced and compassionate caregivers are commited to providing great care to sensure that you or your family member is being well cared for while helping them to remain independent at home. We offer help to seniors by providing services that are designed to help them live independently in their homes and communities.\nTakes advantage of our affordable rate services while recieving the best services for your loved one. <br> <br> Whether you need part time or around the clock help, we are here to offer care based on your specific needs.\nWe offer an individual care plan for your loved one.  The plan will be reviwed and updated based on your changing needs.\n<br>\nWe fully recognize your right to dignity and individuality in the care of your personal needs. <br> <br> Our clients are very important to us. Please let us know if you have any questions regarding our service to ensure that we meet your needs and expectations.\n    Our experience caregivers offer help with: <br> <ul><li>bathing</li> <li>housekeeping</li> <li>laundry</li> <li>hygiene</li> <li>dressing</li> <li>toileting</li> <li>mobility</li> <li>transportation</li> <li>medication reminders</li> <li>pet care</li> <li>more services that depend on your specific needs</li></ul>. We will be pleased to have the chance to provide care for you or your loved one."
+module.exports = "<div class = \"container\">\n    Our experienced and compassionate caregivers are commited to providing great care to sensure that you or your family member is being well cared for while helping them to remain independent at home. We offer help to seniors by providing services that are designed to help them live independently in their homes and communities.\nTakes advantage of our affordable rate services while recieving the best services for your loved one. <br> <br> Whether you need part time or around the clock help, we are here to offer care based on your specific needs.\nWe offer an individual care plan for your loved one.  The plan will be reviwed and updated based on your changing needs.\n<br>\nWe fully recognize your right to dignity and individuality in the care of your personal needs. <br> <br> Our clients are very important to us. Please let us know if you have any questions regarding our service to ensure that we meet your needs and expectations.\n    Our experience caregivers offer help with: <br> <ul><li>bathing</li> <li>housekeeping</li> <li>laundry</li> <li>hygiene</li> <li>dressing</li> <li>toileting</li> <li>mobility</li> <li>transportation</li> <li>medication reminders</li> <li>pet care</li> <li>more services that depend on your specific needs</li></ul>We will be pleased to have the chance to provide care for you or your loved one.\n</div>\n"
 
 /***/ }),
 
@@ -150,6 +194,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _what_we_do_exp_what_we_do_exp_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./what-we-do-exp/what-we-do-exp.component */ "./src/app/what-we-do-exp/what-we-do-exp.component.ts");
 /* harmony import */ var _contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./contact-form/contact-form.component */ "./src/app/contact-form/contact-form.component.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _mission_statement_mission_statement_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./mission-statement/mission-statement.component */ "./src/app/mission-statement/mission-statement.component.ts");
+/* harmony import */ var _value_value_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./value/value.component */ "./src/app/value/value.component.ts");
+/* harmony import */ var _vision_vision_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./vision/vision.component */ "./src/app/vision/vision.component.ts");
+/* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
+
+
+
+
 
 
 
@@ -173,6 +225,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _bootdrop_bootdrop_component__WEBPACK_IMPORTED_MODULE_5__["BootdropComponent"],
             _what_we_do_exp_what_we_do_exp_component__WEBPACK_IMPORTED_MODULE_9__["WhatWeDoExpComponent"],
             _contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_10__["ContactFormComponent"],
+            _mission_statement_mission_statement_component__WEBPACK_IMPORTED_MODULE_12__["MissionStatementComponent"],
+            _value_value_component__WEBPACK_IMPORTED_MODULE_13__["ValueComponent"],
+            _vision_vision_component__WEBPACK_IMPORTED_MODULE_14__["VisionComponent"],
+            _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__["ContactUsComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbAlertModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbNavModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
@@ -298,6 +354,48 @@ ContactFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/contact-us/contact-us.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/contact-us/contact-us.component.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhY3QtdXMvY29udGFjdC11cy5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/contact-us/contact-us.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/contact-us/contact-us.component.ts ***!
+  \****************************************************/
+/*! exports provided: ContactUsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactUsComponent", function() { return ContactUsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ContactUsComponent = class ContactUsComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ContactUsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-contact-us',
+        template: __webpack_require__(/*! raw-loader!./contact-us.component.html */ "./node_modules/raw-loader/index.js!./src/app/contact-us/contact-us.component.html"),
+        styles: [__webpack_require__(/*! ./contact-us.component.css */ "./src/app/contact-us/contact-us.component.css")]
+    })
+], ContactUsComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/headnav/headnav.component.css":
 /*!***********************************************!*\
   !*** ./src/app/headnav/headnav.component.css ***!
@@ -335,6 +433,48 @@ HeadnavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./headnav.component.css */ "./src/app/headnav/headnav.component.css")]
     })
 ], HeadnavComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/mission-statement/mission-statement.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/mission-statement/mission-statement.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21pc3Npb24tc3RhdGVtZW50L21pc3Npb24tc3RhdGVtZW50LmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/mission-statement/mission-statement.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/mission-statement/mission-statement.component.ts ***!
+  \******************************************************************/
+/*! exports provided: MissionStatementComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MissionStatementComponent", function() { return MissionStatementComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let MissionStatementComponent = class MissionStatementComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+MissionStatementComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-mission-statement',
+        template: __webpack_require__(/*! raw-loader!./mission-statement.component.html */ "./node_modules/raw-loader/index.js!./src/app/mission-statement/mission-statement.component.html"),
+        styles: [__webpack_require__(/*! ./mission-statement.component.css */ "./src/app/mission-statement/mission-statement.component.css")]
+    })
+], MissionStatementComponent);
 
 
 
@@ -386,6 +526,90 @@ ServicesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         providedIn: 'root'
     })
 ], ServicesService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/value/value.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/value/value.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZhbHVlL3ZhbHVlLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/value/value.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/value/value.component.ts ***!
+  \******************************************/
+/*! exports provided: ValueComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValueComponent", function() { return ValueComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ValueComponent = class ValueComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ValueComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-value',
+        template: __webpack_require__(/*! raw-loader!./value.component.html */ "./node_modules/raw-loader/index.js!./src/app/value/value.component.html"),
+        styles: [__webpack_require__(/*! ./value.component.css */ "./src/app/value/value.component.css")]
+    })
+], ValueComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/vision/vision.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/vision/vision.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Zpc2lvbi92aXNpb24uY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/vision/vision.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/vision/vision.component.ts ***!
+  \********************************************/
+/*! exports provided: VisionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VisionComponent", function() { return VisionComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let VisionComponent = class VisionComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+VisionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-vision',
+        template: __webpack_require__(/*! raw-loader!./vision.component.html */ "./node_modules/raw-loader/index.js!./src/app/vision/vision.component.html"),
+        styles: [__webpack_require__(/*! ./vision.component.css */ "./src/app/vision/vision.component.css")]
+    })
+], VisionComponent);
 
 
 

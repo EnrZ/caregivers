@@ -1,11 +1,9 @@
+
 <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" name="tabs">
 	<li [ngbNavItem]="1">
 		<a ngbNavLink>Mission Statement</a>
 		<ng-template ngbNavContent>
-		 <p>
-			We strive to offer the highest level of professionalism, services, and support to our clients in order that our clients live independently.
-		 
-		 </p>
+			<app-mission-statement></app-mission-statement>
 		</ng-template>
 	</li>
 	<li [ngbNavItem]="2">
@@ -17,40 +15,22 @@
 	<li [ngbNavItem]="3">
 		<a ngbNavLink>Value</a>
 		<ng-template ngbNavContent>
-		 <p> 
-			Integrity - we establish and preserve trust with all clients by applying our knowledge and skills fairly.
-		 </p>
-		 <p>
-			Professionalism- we are knowledgeable, accurate, conscientious, innovative, and service-oriented.
-		 </p>
-		 <p>
-			Respect- We interact with people in a way that makes them feel heard and valued. We Listen and respond wholeheartedly.
-		 </p>
-		 <p>
-			Collaboration- We recognize and act on opportunities to work together to deliver our company’s best. We consult, and share ideas, fostering innovation to improve the service experience, both internally and externally.
-		 </p>
+			<app-value></app-value>
 		</ng-template>
 	</li>
 	<li [ngbNavItem]="4">
 		<a ngbNavLink>Vision</a>
 		<ng-template ngbNavContent>
-		 <p> People of different generations are heard, valued, and cared for.  Our vision is to become a great trusted name and home care provider of choice in the St. Louis area.  Our experienced and dedicated caregivers will continue to promote well-being through support and active daily interation with our clients and their relatives.</p>
+		<app-vision></app-vision>
 		</ng-template>
 	</li>
 	<li [ngbNavItem]="5">
 		<a ngbNavLink>Contact Us</a>
-		<ng-template ngbNavContent>
-			<p>	24 hours a day, seven days a week. </p>
-			<p>Schedule your Home Care Assessment</p>
-
-			<p>Phone Number: (314) 601-4345 </p>
-
-			<p>Email Contact</p>
-		
+		<ng-template ngbNavContent>		
+				<app-contact-us></app-contact-us>
 				<app-contact-form></app-contact-form>
 		</ng-template>
 	</li>
 </ul>
 
 <div [ngbNavOutlet]="nav" class="mt-2"></div>
-
