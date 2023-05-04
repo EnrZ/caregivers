@@ -1,11 +1,12 @@
 
-  
-
  
-
+@media (min-width: 900px) { 
   h1 {
     font-size: 70px;
   }
+}
+
+  
 
   div[name="head"] {
     background-image: linear-gradient(to right,teal, pink);

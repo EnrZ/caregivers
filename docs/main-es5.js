@@ -85,7 +85,7 @@ module.exports = "<div class = \"container\" style=\"border:1px solid #ddd;\">\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "  \n\n<div class =\"p-5 mb-4 bg-light rounded-3\" name=\"head\">\n        <div class=\"container-fluid py-5\">\n          <p>WORK IN PROGRESS WEBSITE</p>\n          <div class=\"text-center\"> <h1>St. Louis Angelic Caregivers</h1></div>\n</div></div>\n\n\n<app-carousel></app-carousel>\n\n<div name =\"angbar\">\n\n  <app-bootdrop></app-bootdrop>\n  </div>"
+module.exports = "<div class =\"p-5 mb-4 bg-light rounded-3\" name=\"head\">\n        <div class=\"container-fluid\">\n          <div class=\"text-center\"> <h1>St.Louis Angelic Caregivers</h1></div>\n</div></div>\n\n\n<app-carousel></app-carousel>\n\n<div name =\"angbar\">\n\n  <app-bootdrop></app-bootdrop>\n  </div>"
 
 /***/ }),
 
@@ -470,7 +470,7 @@ var ContactUsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n  \n\n \n\n  h1 {\n    font-size: 70px;\n  }\n\n  div[name=\"head\"] {\n    background-image: linear-gradient(to right,teal, pink);\n    color: white;\n  }\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZG5hdi9oZWFkbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7RUFLRTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxzREFBc0Q7SUFDdEQsWUFBWTtFQUNkIiwiZmlsZSI6InNyYy9hcHAvaGVhZG5hdi9oZWFkbmF2LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbiAgXG5cbiBcblxuICBoMSB7XG4gICAgZm9udC1zaXplOiA3MHB4O1xuICB9XG5cbiAgZGl2W25hbWU9XCJoZWFkXCJdIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQodG8gcmlnaHQsdGVhbCwgcGluayk7XG4gICAgY29sb3I6IHdoaXRlO1xuICB9XG5cbiJdfQ== */"
+module.exports = "\n \n@media (min-width: 900px) { \n  h1 {\n    font-size: 70px;\n  }\n}\n\n  \n\n  div[name=\"head\"] {\n    background-image: linear-gradient(to right,teal, pink);\n    color: white;\n  }\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZG5hdi9oZWFkbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQTtFQUNFO0lBQ0UsZUFBZTtFQUNqQjtBQUNGOzs7O0VBSUU7SUFDRSxzREFBc0Q7SUFDdEQsWUFBWTtFQUNkIiwiZmlsZSI6InNyYy9hcHAvaGVhZG5hdi9oZWFkbmF2LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbiBcbkBtZWRpYSAobWluLXdpZHRoOiA5MDBweCkgeyBcbiAgaDEge1xuICAgIGZvbnQtc2l6ZTogNzBweDtcbiAgfVxufVxuXG4gIFxuXG4gIGRpdltuYW1lPVwiaGVhZFwiXSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0LHRlYWwsIHBpbmspO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgfVxuXG4iXX0= */"
 
 /***/ }),
 
