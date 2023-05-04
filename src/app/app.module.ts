@@ -19,6 +19,7 @@ import { MissionStatementComponent } from './mission-statement/mission-statement
 import { ValueComponent } from './value/value.component';
 import { VisionComponent } from './vision/vision.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ValueComponent,
     VisionComponent,
     ContactUsComponent,
+    CarouselComponent,
     
   ],
   imports: [

@@ -1,3 +1,9 @@
 div[name="tabs"] {
     font-size: 20px;
   }
+
+  ::ng-deep .nav-pills a.nav-link.active, 
+::ng-deep .nav-pills .show > a.nav-link {
+  color:white;
+  background-color: teal;
+}

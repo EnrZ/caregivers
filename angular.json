@@ -92,7 +92,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "docs/CNAME"
+              "src/CNAME"
             ],
             "styles": [
               "src/styles.css"
