@@ -1,15 +1,15 @@
 <div class="container">
 	<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" name="tabs">
 		<li [ngbNavItem]="1">
-			<a ngbNavLink>Mission Statement</a>
-			<ng-template ngbNavContent>
-				<app-mission-statement></app-mission-statement>
-			</ng-template>
-		</li>
-		<li [ngbNavItem]="2">
 			<a ngbNavLink>What We Do</a>
 			<ng-template ngbNavContent>
 				<app-what-we-do-exp></app-what-we-do-exp>
+			</ng-template>
+		</li>
+		<li [ngbNavItem]="2">
+			<a ngbNavLink>Contact Us</a>
+			<ng-template ngbNavContent>
+				<app-contact-us></app-contact-us>
 			</ng-template>
 		</li>
 		<li [ngbNavItem]="3">
@@ -25,9 +25,9 @@
 			</ng-template>
 		</li>
 		<li [ngbNavItem]="5">
-			<a ngbNavLink>Contact Us</a>
+			<a ngbNavLink>Mission</a>
 			<ng-template ngbNavContent>		
-					<app-contact-us></app-contact-us>
+				<app-mission-statement></app-mission-statement>
 			</ng-template>
 		</li>
 	</ul>

@@ -41,7 +41,7 @@ module.exports = "<div name = \"bodydiv\">\n<app-headnav></app-headnav>\n  </div
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\t<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-pills\" name=\"tabs\">\n\t\t<li [ngbNavItem]=\"1\">\n\t\t\t<a ngbNavLink>Mission Statement</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-mission-statement></app-mission-statement>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"2\">\n\t\t\t<a ngbNavLink>What We Do</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"3\">\n\t\t\t<a ngbNavLink>Value</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-value></app-value>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"4\">\n\t\t\t<a ngbNavLink>Vision</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t<app-vision></app-vision>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"5\">\n\t\t\t<a ngbNavLink>Contact Us</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t\t<app-contact-us></app-contact-us>\n\t\t\t</ng-template>\n\t\t</li>\n\t</ul>\n\n\t<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n</div>"
+module.exports = "<div class=\"container\">\n\t<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-pills\" name=\"tabs\">\n\t\t<li [ngbNavItem]=\"1\">\n\t\t\t<a ngbNavLink>What We Do</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"2\">\n\t\t\t<a ngbNavLink>Contact Us</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-contact-us></app-contact-us>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"3\">\n\t\t\t<a ngbNavLink>Value</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-value></app-value>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"4\">\n\t\t\t<a ngbNavLink>Vision</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t<app-vision></app-vision>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"5\">\n\t\t\t<a ngbNavLink>Mission</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-mission-statement></app-mission-statement>\n\t\t\t</ng-template>\n\t\t</li>\n\t</ul>\n\n\t<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n</div>"
 
 /***/ }),
 
@@ -268,7 +268,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div[name=\"tabs\"] {\n    font-size: 20px;\n  }\n\n  ::ng-deep .nav-pills a.nav-link.active, \n::ng-deep .nav-pills .show > a.nav-link {\n  color:white;\n  background-color: teal;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9vdGRyb3AvYm9vdGRyb3AuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7RUFDakI7O0VBRUE7O0VBRUEsV0FBVztFQUNYLHNCQUFzQjtBQUN4QiIsImZpbGUiOiJzcmMvYXBwL2Jvb3Rkcm9wL2Jvb3Rkcm9wLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXZbbmFtZT1cInRhYnNcIl0ge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgfVxuXG4gIDo6bmctZGVlcCAubmF2LXBpbGxzIGEubmF2LWxpbmsuYWN0aXZlLCBcbjo6bmctZGVlcCAubmF2LXBpbGxzIC5zaG93ID4gYS5uYXYtbGluayB7XG4gIGNvbG9yOndoaXRlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0ZWFsO1xufVxuIl19 */"
+module.exports = "div[name=\"tabs\"] {\n    font-size: 20px;\n  }\n\n  ::ng-deep .nav-pills a.nav-link.active, \n::ng-deep .nav-pills .show > a.nav-link {\n  color:white;\n  background-color: teal;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9vdGRyb3AvYm9vdGRyb3AuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7RUFDakI7O0VBRUE7O0VBRUEsV0FBVztFQUNYLHNCQUFzQjtBQUN4QiIsImZpbGUiOiJzcmMvYXBwL2Jvb3Rkcm9wL2Jvb3Rkcm9wLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXZbbmFtZT1cInRhYnNcIl0ge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgfVxuXG4gIDo6bmctZGVlcCAubmF2LXBpbGxzIGEubmF2LWxpbmsuYWN0aXZlLCBcbjo6bmctZGVlcCAubmF2LXBpbGxzIC5zaG93ID4gYS5uYXYtbGluayB7XG4gIGNvbG9yOndoaXRlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0ZWFsO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -356,7 +356,7 @@ var CarouselComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhY3QtZm9ybS9jb250YWN0LWZvcm0uY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {\n    background-color: teal !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFjdC1mb3JtL2NvbnRhY3QtZm9ybS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUNBQWlDO0FBQ3JDIiwiZmlsZSI6InNyYy9hcHAvY29udGFjdC1mb3JtL2NvbnRhY3QtZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJ0bi1wcmltYXJ5LCAuYnRuLXByaW1hcnk6aG92ZXIsIC5idG4tcHJpbWFyeTphY3RpdmUsIC5idG4tcHJpbWFyeTp2aXNpdGVkIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0ZWFsICFpbXBvcnRhbnQ7XG59Il19 */"
 
 /***/ }),
 
@@ -470,7 +470,7 @@ var ContactUsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "h1{\n  font-size:42px;\n}\n@media (min-width: 900px) { \n  h1 {\n    font-size: 70px;\n  }\n}\ndiv[name=\"head\"] {\n    background-image: linear-gradient(to right,teal, pink);\n    color: white;\n  }\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZG5hdi9oZWFkbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRTtJQUNFLGVBQWU7RUFDakI7QUFDRjtBQUlFO0lBQ0Usc0RBQXNEO0lBQ3RELFlBQVk7RUFDZCIsImZpbGUiOiJzcmMvYXBwL2hlYWRuYXYvaGVhZG5hdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaDF7XG4gIGZvbnQtc2l6ZTo0MnB4O1xufVxuQG1lZGlhIChtaW4td2lkdGg6IDkwMHB4KSB7IFxuICBoMSB7XG4gICAgZm9udC1zaXplOiA3MHB4O1xuICB9XG59XG5cbiAgXG5cbiAgZGl2W25hbWU9XCJoZWFkXCJdIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQodG8gcmlnaHQsdGVhbCwgcGluayk7XG4gICAgY29sb3I6IHdoaXRlO1xuICB9XG5cbiJdfQ== */"
+module.exports = "h1{\n  font-size:30px;\n}\n@media (min-width: 900px) { \n  h1 {\n    font-size: 70px;\n  }\n}\ndiv[name=\"head\"] {\n    background-image: linear-gradient(to right,teal, pink);\n    color: white;\n  }\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZG5hdi9oZWFkbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRTtJQUNFLGVBQWU7RUFDakI7QUFDRjtBQUlFO0lBQ0Usc0RBQXNEO0lBQ3RELFlBQVk7RUFDZCIsImZpbGUiOiJzcmMvYXBwL2hlYWRuYXYvaGVhZG5hdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaDF7XG4gIGZvbnQtc2l6ZTozMHB4O1xufVxuQG1lZGlhIChtaW4td2lkdGg6IDkwMHB4KSB7IFxuICBoMSB7XG4gICAgZm9udC1zaXplOiA3MHB4O1xuICB9XG59XG5cbiAgXG5cbiAgZGl2W25hbWU9XCJoZWFkXCJdIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQodG8gcmlnaHQsdGVhbCwgcGluayk7XG4gICAgY29sb3I6IHdoaXRlO1xuICB9XG5cbiJdfQ== */"
 
 /***/ }),
 
