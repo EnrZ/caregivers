@@ -18,14 +18,14 @@ import { ValueComponent } from './value/value.component';
 import { VisionComponent } from './vision/vision.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { RouterModule, Routes } from '@angular/router';
+//import { RouterModule, Routes } from '@angular/router';
 
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterLink } from '@angular/router';
 
-const routes: Routes = [
+//const routes: Routes = [
 
-];
+//];
 
 @NgModule({
   declarations: [
@@ -42,8 +42,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule, NgbAlertModule,BrowserAnimationsModule,NgbNavModule,FormsModule,ReactiveFormsModule,
-    HttpClientModule, NgbCollapseModule,
-    RouterModule.forRoot(routes)
+    HttpClientModule, NgbCollapseModule
+   // RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
