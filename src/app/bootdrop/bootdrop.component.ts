@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-bootdrop',
@@ -12,5 +13,6 @@ export class BootdropComponent implements OnInit {
 
   ngOnInit() {
   }
+  isMenuCollapsed = true;
 
 }
