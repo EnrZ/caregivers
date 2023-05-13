@@ -1,3 +1,6 @@
 div[name="bodydiv"] {
     font-size: 22px;
   }
+div[name="all"] {
+  background-color: rgb(226,228,255) ;
+}

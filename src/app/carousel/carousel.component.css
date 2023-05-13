@@ -57,7 +57,6 @@ body {
     
    /*The location of this matters, when carousel-control etc. were lower in the css, the arrows wouldnt
    show up when the website was in its mobile version*/ 
-   
     .carousel-control-next,
   .carousel-control-prev /*, .carousel-indicators */ {
       filter: invert(100%);

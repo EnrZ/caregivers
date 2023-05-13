@@ -10,7 +10,7 @@ h1{
   
 
   div[name="head"] {
-    background-image: linear-gradient(to right,teal, pink);
+    background-image: linear-gradient(to right,teal, rgb(166,139,158));
     color: white;
   }
 

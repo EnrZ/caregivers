@@ -21,7 +21,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 //import { RouterModule, Routes } from '@angular/router';
 
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
-import { RouterLink } from '@angular/router';
+//import { RouterLink } from '@angular/router';
 
 //const routes: Routes = [
 
