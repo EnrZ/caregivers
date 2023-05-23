@@ -18,8 +18,9 @@ const routes: Routes = [
   { path: 'apply', component: ApplyComponent},
 ];
 
-@NgModule({
+/*@NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
-})
+})*/
+@NgModule({ imports: [RouterModule.forRoot(routes,{ useHash: true})], exports: [RouterModule], })
 export class AppRoutingModule { }
