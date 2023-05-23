@@ -1,3 +1,8 @@
+.container{
+  padding-top:2%;
+  font-size: 22px;
+}
+
 div[name="tabs"] {
     font-size: 20px;
   }
@@ -7,7 +12,14 @@ div[name="tabs"] {
   color:white;
   background-color: teal;
 }
+:ng-deep .navbar a.nav-link.active, 
+::ng-deep .navbar .show > a.nav-link {
+  background-color:teal;
+}
 
 h1{
   font-size:30px;
+}
+.navbar a.nav-link:hover {
+  font-weight:bolder;
 }

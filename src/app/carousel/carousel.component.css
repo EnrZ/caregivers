@@ -17,7 +17,7 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-  padding-bottom: 2%;
+  //padding-bottom: 2%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
