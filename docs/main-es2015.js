@@ -30,7 +30,18 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div name = \"all\">\n  <app-headnav></app-headnav>\n    <app-carousel></app-carousel>\n\n  <div name =\"bodydiv\">\n    <app-bootdrop></app-bootdrop>\n  </div>\n</div>"
+module.exports = "<div name = \"all\">\n\n  <app-bootdrop></app-bootdrop>\n  \n  <div name = \"carousel\">\n    <app-carousel></app-carousel>\n  </div>\n  <div name = \"bodydiv\">\n  <router-outlet></router-outlet>\n</div>\n    \n\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/apply/apply.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/apply/apply.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class = \"container\" style=\"border:1px solid #ddd;\">\n\nIf    Download and fill out this pdf\n<code> </code>send the file to apply@stlangelcare.com\n<a target=\"_self\" href=\"../../assets/AngelCareApplication.pdf\" download=\"AngelCareApplication.pdf\">here</a>\n</div>"
 
 /***/ }),
 
@@ -41,7 +52,7 @@ module.exports = "<div name = \"all\">\n  <app-headnav></app-headnav>\n    <app-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\t<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-pills\" name=\"tabs\">\n\t\t<li [ngbNavItem]=\"1\">\n\t\t\t<a ngbNavLink>What We Do</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"2\">\n\t\t\t<a ngbNavLink>Contact Us</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-contact-us></app-contact-us>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"3\">\n\t\t\t<a ngbNavLink>Value</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-value></app-value>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"4\">\n\t\t\t<a ngbNavLink>Vision</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t<app-vision></app-vision>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"5\">\n\t\t\t<a ngbNavLink>Mission</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-mission-statement></app-mission-statement>\n\t\t\t</ng-template>\n\t\t</li>\n\t</ul>\n\n\n\n\t<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n</div>"
+module.exports = "<!--div class=\"container\">\n\t<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-pills\" name=\"tabs\">\n\t\t<li [ngbNavItem]=\"1\">\n\t\t\t<a ngbNavLink>What We Do</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"2\">\n\t\t\t<a ngbNavLink>Contact Us</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-contact-us></app-contact-us>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"3\">\n\t\t\t<a ngbNavLink>Value</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-value></app-value>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"4\">\n\t\t\t<a ngbNavLink>Vision</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t<app-vision></app-vision>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"5\">\n\t\t\t<a ngbNavLink>Mission</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-mission-statement></app-mission-statement>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"6\">\n\t\t\t<a ngbNavLink>Apply</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-apply></app-apply>\n\t\t\t</ng-template>\n\t\t</li>\n\t</ul>\n\n\n\n\t<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n</div-->\n\n\t<nav class=\"navbar navbar-expand-lg navbar-light p-3 rounded-3\" style=\"background-image: linear-gradient(to right,teal, rgb(166,139,158));\">\n\t\t<a class=\"navbar-brand\" >Saint Louis Angelic Caregivers</a>\n\t\t\t\t<!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" (click)=\"isMenuCollapsed = !isMenuCollapsed\">&#9776;</button>\n\n\t\t\t\t<!-- Step 2: Add the ngbCollapse directive to the element below. -->\n\t\t\t\t<div [ngbCollapse]=\"isMenuCollapsed\" class=\"collapse navbar-collapse\">\n\t\t\t\t\t<ul class=\"navbar-nav\">\n\t\t\t<li class=\"nav-item active\">\n\t\t\t  <a routerLink=\"home\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">What We Do</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t  <a [routerLink]=\"['/contact']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Contact Us</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/value']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Value</a>\n\t\t\t  </li>\n\t\t\t  <li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/mission']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Mission Statement</a>\n\t\t\t  </li>\n\t\t\t  <li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/vision']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Vision</a>\n\t\t\t  </li>\n\t\t  </ul>\n\t\t</div>\n\t  </nav>\n\n"
 
 /***/ }),
 
@@ -133,6 +144,56 @@ module.exports = "<div class = \"container\" style=\"border:1px solid #ddd;\">\n
 
 /***/ }),
 
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _what_we_do_exp_what_we_do_exp_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./what-we-do-exp/what-we-do-exp.component */ "./src/app/what-we-do-exp/what-we-do-exp.component.ts");
+/* harmony import */ var _mission_statement_mission_statement_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mission-statement/mission-statement.component */ "./src/app/mission-statement/mission-statement.component.ts");
+/* harmony import */ var _value_value_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./value/value.component */ "./src/app/value/value.component.ts");
+/* harmony import */ var _vision_vision_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./vision/vision.component */ "./src/app/vision/vision.component.ts");
+/* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
+/* harmony import */ var _apply_apply_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./apply/apply.component */ "./src/app/apply/apply.component.ts");
+
+
+
+
+
+
+
+
+
+const routes = [
+    { path: '', component: _what_we_do_exp_what_we_do_exp_component__WEBPACK_IMPORTED_MODULE_3__["WhatWeDoExpComponent"] },
+    { path: 'home', component: _what_we_do_exp_what_we_do_exp_component__WEBPACK_IMPORTED_MODULE_3__["WhatWeDoExpComponent"] },
+    { path: 'contact', component: _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_7__["ContactUsComponent"] },
+    { path: 'mission', component: _mission_statement_mission_statement_component__WEBPACK_IMPORTED_MODULE_4__["MissionStatementComponent"] },
+    { path: 'value', component: _value_value_component__WEBPACK_IMPORTED_MODULE_5__["ValueComponent"] },
+    { path: 'vision', component: _vision_vision_component__WEBPACK_IMPORTED_MODULE_6__["VisionComponent"] },
+    { path: 'apply', component: _apply_apply_component__WEBPACK_IMPORTED_MODULE_8__["ApplyComponent"] },
+];
+let AppRoutingModule = class AppRoutingModule {
+};
+AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], AppRoutingModule);
+
+
+
+/***/ }),
+
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -140,7 +201,7 @@ module.exports = "<div class = \"container\" style=\"border:1px solid #ddd;\">\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div[name=\"bodydiv\"] {\n    font-size: 22px;\n  }\ndiv[name=\"all\"] {\n  background-color: rgb(226,228,255) ;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0VBQ2pCO0FBQ0Y7RUFDRSxtQ0FBbUM7QUFDckMiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdltuYW1lPVwiYm9keWRpdlwiXSB7XG4gICAgZm9udC1zaXplOiAyMnB4O1xuICB9XG5kaXZbbmFtZT1cImFsbFwiXSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjYsMjI4LDI1NSkgO1xufSJdfQ== */"
+module.exports = "div[name=\"bodydiv\"] {\n    font-size: 22px;\n    padding-top:2%;\n  }\ndiv[name=\"all\"] {\n  background-color: rgb(226,228,255) ;\n}\n/*div[name=\"carousel\"]{\n  background-color: rgb(228, 200, 224);\n}*/\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsY0FBYztFQUNoQjtBQUNGO0VBQ0UsbUNBQW1DO0FBQ3JDO0FBRUE7O0VBRUUiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdltuYW1lPVwiYm9keWRpdlwiXSB7XG4gICAgZm9udC1zaXplOiAyMnB4O1xuICAgIHBhZGRpbmctdG9wOjIlO1xuICB9XG5kaXZbbmFtZT1cImFsbFwiXSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjYsMjI4LDI1NSkgO1xufVxuXG4vKmRpdltuYW1lPVwiY2Fyb3VzZWxcIl17XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjgsIDIwMCwgMjI0KTtcbn0qLyJdfQ== */"
 
 /***/ }),
 
@@ -210,6 +271,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vision_vision_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./vision/vision.component */ "./src/app/vision/vision.component.ts");
 /* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
 /* harmony import */ var _carousel_carousel_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./carousel/carousel.component */ "./src/app/carousel/carousel.component.ts");
+/* harmony import */ var _apply_apply_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./apply/apply.component */ "./src/app/apply/apply.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+
+
+
+//import { NgAnimate } from @angular/
 
 
 
@@ -228,11 +295,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//import { RouterModule, Routes } from '@angular/router';
-
-//import { RouterLink } from '@angular/router';
-//const routes: Routes = [
-//];
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -248,16 +310,59 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _vision_vision_component__WEBPACK_IMPORTED_MODULE_14__["VisionComponent"],
             _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__["ContactUsComponent"],
             _carousel_carousel_component__WEBPACK_IMPORTED_MODULE_16__["CarouselComponent"],
+            _apply_apply_component__WEBPACK_IMPORTED_MODULE_17__["ApplyComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbAlertModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbNavModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbCollapseModule"]
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbCollapseModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_18__["AppRoutingModule"]
             // RouterModule.forRoot(routes)
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/apply/apply.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/apply/apply.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".container {\n    min-height: 500px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbHkvYXBwbHkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQiIsImZpbGUiOiJzcmMvYXBwL2FwcGx5L2FwcGx5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICBtaW4taGVpZ2h0OiA1MDBweDtcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/apply/apply.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/apply/apply.component.ts ***!
+  \******************************************/
+/*! exports provided: ApplyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApplyComponent", function() { return ApplyComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ApplyComponent = class ApplyComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ApplyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-apply',
+        template: __webpack_require__(/*! raw-loader!./apply.component.html */ "./node_modules/raw-loader/index.js!./src/app/apply/apply.component.html"),
+        styles: [__webpack_require__(/*! ./apply.component.css */ "./src/app/apply/apply.component.css")]
+    })
+], ApplyComponent);
 
 
 
@@ -270,7 +375,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div[name=\"tabs\"] {\n    font-size: 20px;\n  }\n\n  ::ng-deep .nav-pills a.nav-link.active, \n::ng-deep .nav-pills .show > a.nav-link {\n  color:white;\n  background-color: teal;\n}\n\n  h1{\n  font-size:30px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9vdGRyb3AvYm9vdGRyb3AuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7RUFDakI7O0VBRUE7O0VBRUEsV0FBVztFQUNYLHNCQUFzQjtBQUN4Qjs7RUFFQTtFQUNFLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9ib290ZHJvcC9ib290ZHJvcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZGl2W25hbWU9XCJ0YWJzXCJdIHtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gIH1cblxuICA6Om5nLWRlZXAgLm5hdi1waWxscyBhLm5hdi1saW5rLmFjdGl2ZSwgXG46Om5nLWRlZXAgLm5hdi1waWxscyAuc2hvdyA+IGEubmF2LWxpbmsge1xuICBjb2xvcjp3aGl0ZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdGVhbDtcbn1cblxuaDF7XG4gIGZvbnQtc2l6ZTozMHB4O1xufSJdfQ== */"
+module.exports = "/*.container{\n  padding-top:2%;\n  font-size: 22px;\n}*/\n\ndiv[name=\"tabs\"] {\n    font-size: 20px;\n  }\n\n::ng-deep .nav-pills a.nav-link.active, \n::ng-deep .nav-pills .show > a.nav-link {\n  color:white;\n  background-color: teal;\n}\n\n:ng-deep .navbar a.nav-link.active, \n::ng-deep .navbar .show > a.nav-link {\n  background-color:teal;\n}\n\nh1{\n  font-size:30px;\n}\n\n.navbar a.nav-link:hover {\n  font-weight:bolder;\n}\n\na.nav-link{\n  color:white;\n}\n\ncollapse ul li a { color:white }\n\n.navbar-brand { color:white }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9vdGRyb3AvYm9vdGRyb3AuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0VBR0U7O0FBRUY7SUFDSSxlQUFlO0VBQ2pCOztBQUVBOztFQUVBLFdBQVc7RUFDWCxzQkFBc0I7QUFDeEI7O0FBQ0E7O0VBRUUscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLFdBQVc7QUFDYjs7QUFDQSxtQkFBbUIsWUFBWTs7QUFBQyxnQkFBZ0IsWUFBWSIsImZpbGUiOiJzcmMvYXBwL2Jvb3Rkcm9wL2Jvb3Rkcm9wLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKi5jb250YWluZXJ7XG4gIHBhZGRpbmctdG9wOjIlO1xuICBmb250LXNpemU6IDIycHg7XG59Ki9cblxuZGl2W25hbWU9XCJ0YWJzXCJdIHtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gIH1cblxuICA6Om5nLWRlZXAgLm5hdi1waWxscyBhLm5hdi1saW5rLmFjdGl2ZSwgXG46Om5nLWRlZXAgLm5hdi1waWxscyAuc2hvdyA+IGEubmF2LWxpbmsge1xuICBjb2xvcjp3aGl0ZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdGVhbDtcbn1cbjpuZy1kZWVwIC5uYXZiYXIgYS5uYXYtbGluay5hY3RpdmUsIFxuOjpuZy1kZWVwIC5uYXZiYXIgLnNob3cgPiBhLm5hdi1saW5rIHtcbiAgYmFja2dyb3VuZC1jb2xvcjp0ZWFsO1xufVxuXG5oMXtcbiAgZm9udC1zaXplOjMwcHg7XG59XG4ubmF2YmFyIGEubmF2LWxpbms6aG92ZXIge1xuICBmb250LXdlaWdodDpib2xkZXI7XG59XG5hLm5hdi1saW5re1xuICBjb2xvcjp3aGl0ZTtcbn1cbmNvbGxhcHNlIHVsIGxpIGEgeyBjb2xvcjp3aGl0ZSB9Lm5hdmJhci1icmFuZCB7IGNvbG9yOndoaXRlIH0iXX0= */"
 
 /***/ }),
 
@@ -314,7 +419,7 @@ BootdropComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* GLOBAL STYLES\n-------------------------------------------------- */\n/* Padding below the footer and lighter body text */\nbody {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    /*color: #5a5a5a; */\n  }\n/* CUSTOMIZE THE CAROUSEL\n  -------------------------------------------------- */\n/* Since positioning the image, we need to help out the caption */\n/* Declare heights because of positioning of img element */\n.carousel-item {\n  padding-bottom: 2%;\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  min-height: 250px;\n  }\n/* MARKETING CONTENT\n  -------------------------------------------------- */\n/* Center align the text within the three columns below the carousel */\n/* Featurettes\n  ------------------------- */\n/* RESPONSIVE CSS\n  -------------------------------------------------- */\n@media (min-width: 1em) {\n    /* Bump up size of carousel content */\n    .carousel-caption p {\n      margin-bottom: 1.25rem;\n      font-size: 1.5rem;\n      line-height: 35;\n      color: white;\n      font-weight: bold;\n    }\n  \n    .carousel-caption h1 {\n        color: black;\n    }\n \n    \n    \n   /*The location of this matters, when carousel-control etc. were lower in the css, the arrows wouldnt\n   show up when the website was in its mobile version*/ \n    .carousel-control-next,\n  .carousel-control-prev /*, .carousel-indicators */ {\n      -webkit-filter: invert(100%);\n              filter: invert(100%);\n  }\n  \n    .featurette-heading {\n      font-size: 50px;\n    }\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2Fyb3VzZWwvY2Fyb3VzZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtvREFDb0Q7QUFDcEQsbURBQW1EO0FBRW5EO0lBQ0ksaUJBQWlCO0lBQ2pCLG9CQUFvQjtJQUNwQixtQkFBbUI7RUFDckI7QUFHQTtzREFDb0Q7QUFFcEQsaUVBQWlFO0FBR2pFLDBEQUEwRDtBQUMxRDtFQUNBLGtCQUFrQjtFQUNsQixzQkFBc0I7RUFDdEIsMkJBQTJCO0VBQzNCLDRCQUE0QjtFQUM1QixpQkFBaUI7RUFDakI7QUFFQTtzREFDb0Q7QUFFcEQsc0VBQXNFO0FBSXRFOzZCQUMyQjtBQUkzQjtzREFDb0Q7QUFFcEQ7SUFDRSxxQ0FBcUM7SUFDckM7TUFDRSxzQkFBc0I7TUFDdEIsaUJBQWlCO01BQ2pCLGVBQWU7TUFDZixZQUFZO01BQ1osaUJBQWlCO0lBQ25COztJQUVBO1FBQ0ksWUFBWTtJQUNoQjs7OztHQUlEO3NEQUNtRDtJQUNsRDs7TUFFRSw0QkFBb0I7Y0FBcEIsb0JBQW9CO0VBQ3hCOztJQUVFO01BQ0UsZUFBZTtJQUNqQjtFQUNGIiwiZmlsZSI6InNyYy9hcHAvY2Fyb3VzZWwvY2Fyb3VzZWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIEdMT0JBTCBTVFlMRVNcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG4vKiBQYWRkaW5nIGJlbG93IHRoZSBmb290ZXIgYW5kIGxpZ2h0ZXIgYm9keSB0ZXh0ICovXG5cbmJvZHkge1xuICAgIHBhZGRpbmctdG9wOiAzcmVtO1xuICAgIHBhZGRpbmctYm90dG9tOiAzcmVtO1xuICAgIC8qY29sb3I6ICM1YTVhNWE7ICovXG4gIH1cbiAgXG4gIFxuICAvKiBDVVNUT01JWkUgVEhFIENBUk9VU0VMXG4gIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG4gIFxuICAvKiBTaW5jZSBwb3NpdGlvbmluZyB0aGUgaW1hZ2UsIHdlIG5lZWQgdG8gaGVscCBvdXQgdGhlIGNhcHRpb24gKi9cblxuICBcbiAgLyogRGVjbGFyZSBoZWlnaHRzIGJlY2F1c2Ugb2YgcG9zaXRpb25pbmcgb2YgaW1nIGVsZW1lbnQgKi9cbiAgLmNhcm91c2VsLWl0ZW0ge1xuICBwYWRkaW5nLWJvdHRvbTogMiU7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgbWluLWhlaWdodDogMjUwcHg7XG4gIH1cbiAgXG4gIC8qIE1BUktFVElORyBDT05URU5UXG4gIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG4gIFxuICAvKiBDZW50ZXIgYWxpZ24gdGhlIHRleHQgd2l0aGluIHRoZSB0aHJlZSBjb2x1bW5zIGJlbG93IHRoZSBjYXJvdXNlbCAqL1xuXG4gIFxuICBcbiAgLyogRmVhdHVyZXR0ZXNcbiAgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSAqL1xuIFxuICBcbiAgXG4gIC8qIFJFU1BPTlNJVkUgQ1NTXG4gIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG4gIFxuICBAbWVkaWEgKG1pbi13aWR0aDogMWVtKSB7XG4gICAgLyogQnVtcCB1cCBzaXplIG9mIGNhcm91c2VsIGNvbnRlbnQgKi9cbiAgICAuY2Fyb3VzZWwtY2FwdGlvbiBwIHtcbiAgICAgIG1hcmdpbi1ib3R0b206IDEuMjVyZW07XG4gICAgICBmb250LXNpemU6IDEuNXJlbTtcbiAgICAgIGxpbmUtaGVpZ2h0OiAzNTtcbiAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIH1cbiAgXG4gICAgLmNhcm91c2VsLWNhcHRpb24gaDEge1xuICAgICAgICBjb2xvcjogYmxhY2s7XG4gICAgfVxuIFxuICAgIFxuICAgIFxuICAgLypUaGUgbG9jYXRpb24gb2YgdGhpcyBtYXR0ZXJzLCB3aGVuIGNhcm91c2VsLWNvbnRyb2wgZXRjLiB3ZXJlIGxvd2VyIGluIHRoZSBjc3MsIHRoZSBhcnJvd3Mgd291bGRudFxuICAgc2hvdyB1cCB3aGVuIHRoZSB3ZWJzaXRlIHdhcyBpbiBpdHMgbW9iaWxlIHZlcnNpb24qLyBcbiAgICAuY2Fyb3VzZWwtY29udHJvbC1uZXh0LFxuICAuY2Fyb3VzZWwtY29udHJvbC1wcmV2IC8qLCAuY2Fyb3VzZWwtaW5kaWNhdG9ycyAqLyB7XG4gICAgICBmaWx0ZXI6IGludmVydCgxMDAlKTtcbiAgfVxuICBcbiAgICAuZmVhdHVyZXR0ZS1oZWFkaW5nIHtcbiAgICAgIGZvbnQtc2l6ZTogNTBweDtcbiAgICB9XG4gIH0iXX0= */"
+module.exports = "/* GLOBAL STYLES\n-------------------------------------------------- */\n/* Padding below the footer and lighter body text */\nbody {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    /*color: #5a5a5a; */\n  }\n/* CUSTOMIZE THE CAROUSEL\n  -------------------------------------------------- */\n/* Since positioning the image, we need to help out the caption */\n/* Declare heights because of positioning of img element */\n.carousel-item {\n  //padding-bottom: 2%;\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  min-height: 250px;\n  }\n/* MARKETING CONTENT\n  -------------------------------------------------- */\n/* Center align the text within the three columns below the carousel */\n/* Featurettes\n  ------------------------- */\n/* RESPONSIVE CSS\n  -------------------------------------------------- */\n@media (min-width: 1em) {\n    /* Bump up size of carousel content */\n    .carousel-caption p {\n      margin-bottom: 1.25rem;\n      font-size: 1.5rem;\n      line-height: 35;\n      color: white;\n      font-weight: bold;\n    }\n  \n    .carousel-caption h1 {\n        color: black;\n    }\n \n    \n    \n   /*The location of this matters, when carousel-control etc. were lower in the css, the arrows wouldnt\n   show up when the website was in its mobile version*/ \n    .carousel-control-next,\n  .carousel-control-prev /*, .carousel-indicators */ {\n      -webkit-filter: invert(100%);\n              filter: invert(100%);\n  }\n  \n    .featurette-heading {\n      font-size: 50px;\n    }\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2Fyb3VzZWwvY2Fyb3VzZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtvREFDb0Q7QUFDcEQsbURBQW1EO0FBRW5EO0lBQ0ksaUJBQWlCO0lBQ2pCLG9CQUFvQjtJQUNwQixtQkFBbUI7RUFDckI7QUFHQTtzREFDb0Q7QUFFcEQsaUVBQWlFO0FBR2pFLDBEQUEwRDtBQUMxRDtFQUNBLG9CQUFvQjtFQUNwQixzQkFBc0I7RUFDdEIsMkJBQTJCO0VBQzNCLDRCQUE0QjtFQUM1QixpQkFBaUI7RUFDakI7QUFFQTtzREFDb0Q7QUFFcEQsc0VBQXNFO0FBSXRFOzZCQUMyQjtBQUkzQjtzREFDb0Q7QUFFcEQ7SUFDRSxxQ0FBcUM7SUFDckM7TUFDRSxzQkFBc0I7TUFDdEIsaUJBQWlCO01BQ2pCLGVBQWU7TUFDZixZQUFZO01BQ1osaUJBQWlCO0lBQ25COztJQUVBO1FBQ0ksWUFBWTtJQUNoQjs7OztHQUlEO3NEQUNtRDtJQUNsRDs7TUFFRSw0QkFBb0I7Y0FBcEIsb0JBQW9CO0VBQ3hCOztJQUVFO01BQ0UsZUFBZTtJQUNqQjtFQUNGIiwiZmlsZSI6InNyYy9hcHAvY2Fyb3VzZWwvY2Fyb3VzZWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIEdMT0JBTCBTVFlMRVNcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG4vKiBQYWRkaW5nIGJlbG93IHRoZSBmb290ZXIgYW5kIGxpZ2h0ZXIgYm9keSB0ZXh0ICovXG5cbmJvZHkge1xuICAgIHBhZGRpbmctdG9wOiAzcmVtO1xuICAgIHBhZGRpbmctYm90dG9tOiAzcmVtO1xuICAgIC8qY29sb3I6ICM1YTVhNWE7ICovXG4gIH1cbiAgXG4gIFxuICAvKiBDVVNUT01JWkUgVEhFIENBUk9VU0VMXG4gIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG4gIFxuICAvKiBTaW5jZSBwb3NpdGlvbmluZyB0aGUgaW1hZ2UsIHdlIG5lZWQgdG8gaGVscCBvdXQgdGhlIGNhcHRpb24gKi9cblxuICBcbiAgLyogRGVjbGFyZSBoZWlnaHRzIGJlY2F1c2Ugb2YgcG9zaXRpb25pbmcgb2YgaW1nIGVsZW1lbnQgKi9cbiAgLmNhcm91c2VsLWl0ZW0ge1xuICAvL3BhZGRpbmctYm90dG9tOiAyJTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBtaW4taGVpZ2h0OiAyNTBweDtcbiAgfVxuICBcbiAgLyogTUFSS0VUSU5HIENPTlRFTlRcbiAgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cbiAgXG4gIC8qIENlbnRlciBhbGlnbiB0aGUgdGV4dCB3aXRoaW4gdGhlIHRocmVlIGNvbHVtbnMgYmVsb3cgdGhlIGNhcm91c2VsICovXG5cbiAgXG4gIFxuICAvKiBGZWF0dXJldHRlc1xuICAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG4gXG4gIFxuICBcbiAgLyogUkVTUE9OU0lWRSBDU1NcbiAgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cbiAgXG4gIEBtZWRpYSAobWluLXdpZHRoOiAxZW0pIHtcbiAgICAvKiBCdW1wIHVwIHNpemUgb2YgY2Fyb3VzZWwgY29udGVudCAqL1xuICAgIC5jYXJvdXNlbC1jYXB0aW9uIHAge1xuICAgICAgbWFyZ2luLWJvdHRvbTogMS4yNXJlbTtcbiAgICAgIGZvbnQtc2l6ZTogMS41cmVtO1xuICAgICAgbGluZS1oZWlnaHQ6IDM1O1xuICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgfVxuICBcbiAgICAuY2Fyb3VzZWwtY2FwdGlvbiBoMSB7XG4gICAgICAgIGNvbG9yOiBibGFjaztcbiAgICB9XG4gXG4gICAgXG4gICAgXG4gICAvKlRoZSBsb2NhdGlvbiBvZiB0aGlzIG1hdHRlcnMsIHdoZW4gY2Fyb3VzZWwtY29udHJvbCBldGMuIHdlcmUgbG93ZXIgaW4gdGhlIGNzcywgdGhlIGFycm93cyB3b3VsZG50XG4gICBzaG93IHVwIHdoZW4gdGhlIHdlYnNpdGUgd2FzIGluIGl0cyBtb2JpbGUgdmVyc2lvbiovIFxuICAgIC5jYXJvdXNlbC1jb250cm9sLW5leHQsXG4gIC5jYXJvdXNlbC1jb250cm9sLXByZXYgLyosIC5jYXJvdXNlbC1pbmRpY2F0b3JzICovIHtcbiAgICAgIGZpbHRlcjogaW52ZXJ0KDEwMCUpO1xuICB9XG4gIFxuICAgIC5mZWF0dXJldHRlLWhlYWRpbmcge1xuICAgICAgZm9udC1zaXplOiA1MHB4O1xuICAgIH1cbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -467,7 +572,7 @@ ContactUsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "h1{\n  font-size:30px;\n}\n@media (min-width: 900px) { \n  h1 {\n    font-size: 70px;\n  }\n}\ndiv[name=\"head\"] {\n    background-image: linear-gradient(to right,teal, rgb(166,139,158));\n    color: white;\n  }\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZG5hdi9oZWFkbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRTtJQUNFLGVBQWU7RUFDakI7QUFDRjtBQUlFO0lBQ0Usa0VBQWtFO0lBQ2xFLFlBQVk7RUFDZCIsImZpbGUiOiJzcmMvYXBwL2hlYWRuYXYvaGVhZG5hdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaDF7XG4gIGZvbnQtc2l6ZTozMHB4O1xufVxuQG1lZGlhIChtaW4td2lkdGg6IDkwMHB4KSB7IFxuICBoMSB7XG4gICAgZm9udC1zaXplOiA3MHB4O1xuICB9XG59XG5cbiAgXG5cbiAgZGl2W25hbWU9XCJoZWFkXCJdIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQodG8gcmlnaHQsdGVhbCwgcmdiKDE2NiwxMzksMTU4KSk7XG4gICAgY29sb3I6IHdoaXRlO1xuICB9XG5cbiJdfQ== */"
+module.exports = "h1{\n  font-size:30px;\n}\n@media (min-width: 900px) { \n  h1 {\n    font-size: 70px;\n  }\n}\ndiv[name=\"head\"] {\n    background-image: linear-gradient(to right,teal, rgb(166,139,158));\n    /*background-image: linear-gradient(to right,rgb(68, 172, 129), rgb(228,200,224))matches business card;*/\n    color: white;\n  }\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZG5hdi9oZWFkbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRTtJQUNFLGVBQWU7RUFDakI7QUFDRjtBQUlFO0lBQ0Usa0VBQWtFO0lBQ2xFLHdHQUF3RztJQUN4RyxZQUFZO0VBQ2QiLCJmaWxlIjoic3JjL2FwcC9oZWFkbmF2L2hlYWRuYXYuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgxe1xuICBmb250LXNpemU6MzBweDtcbn1cbkBtZWRpYSAobWluLXdpZHRoOiA5MDBweCkgeyBcbiAgaDEge1xuICAgIGZvbnQtc2l6ZTogNzBweDtcbiAgfVxufVxuXG4gIFxuXG4gIGRpdltuYW1lPVwiaGVhZFwiXSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0LHRlYWwsIHJnYigxNjYsMTM5LDE1OCkpO1xuICAgIC8qYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0LHJnYig2OCwgMTcyLCAxMjkpLCByZ2IoMjI4LDIwMCwyMjQpKW1hdGNoZXMgYnVzaW5lc3MgY2FyZDsqL1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgfVxuXG4iXX0= */"
 
 /***/ }),
 

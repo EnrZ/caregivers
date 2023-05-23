@@ -1,7 +1,7 @@
-.container{
+/*.container{
   padding-top:2%;
   font-size: 22px;
-}
+}*/
 
 div[name="tabs"] {
     font-size: 20px;
@@ -23,3 +23,7 @@ h1{
 .navbar a.nav-link:hover {
   font-weight:bolder;
 }
+a.nav-link{
+  color:white;
+}
+collapse ul li a { color:white }.navbar-brand { color:white }
