@@ -24,6 +24,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { ApplyComponent } from './apply/apply.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AppRoutingModule } from './app-routing.module';
     ContactUsComponent,
     CarouselComponent,
     ApplyComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule, NgbAlertModule,BrowserAnimationsModule,NgbNavModule,FormsModule,ReactiveFormsModule,
