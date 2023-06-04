@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div name = \"all\">\n\n  <app-bootdrop></app-bootdrop>\n  <div class = \"row flex-lg-row-reverse align-items-centerv\">\n  <div class=\"col-lg-6\">\n  <div name = \"carousel\">\n <app-carousel></app-carousel>\n</div>\n</div>\n<div class=\"col-lg-6\">\n  <div name = \"bodydiv\">\n  <router-outlet></router-outlet>\n</div>\n</div>\n\n\n</div>\n</div>"
+module.exports = "<div name = \"all\">\n\n  <app-bootdrop></app-bootdrop>\n  <div class = \"row flex-lg-row-reverse align-items-centerv\">\n    <div class=\"col-lg-6\">\n      <div name = \"carousel\">\n        <app-carousel></app-carousel>\n      </div>\n    </div>\n  <div class=\"col-lg-6\">\n    <div name = \"bodydiv\">\n      <router-outlet></router-outlet>\n    </div>\n  </div>\n\n  <app-footer></app-footer>\n  </div>\n\n  \n</div>"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ module.exports = "<div class = \"container\" style=\"border:1px solid #ddd;\">\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--div class=\"container\">\n\t<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-pills\" name=\"tabs\">\n\t\t<li [ngbNavItem]=\"1\">\n\t\t\t<a ngbNavLink>What We Do</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"2\">\n\t\t\t<a ngbNavLink>Contact Us</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-contact-us></app-contact-us>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"3\">\n\t\t\t<a ngbNavLink>Value</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-value></app-value>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"4\">\n\t\t\t<a ngbNavLink>Vision</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t<app-vision></app-vision>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"5\">\n\t\t\t<a ngbNavLink>Mission</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-mission-statement></app-mission-statement>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"6\">\n\t\t\t<a ngbNavLink>Apply</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-apply></app-apply>\n\t\t\t</ng-template>\n\t\t</li>\n\t</ul>\n\n\n\n\t<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n</div-->\n\n\t<nav class=\"navbar navbar-expand-lg navbar-light p-3 rounded-3\" style=\"background-image: linear-gradient(to right,teal, rgb(166,139,158));\">\n\t\t<a class=\"navbar-brand\" >Saint Louis Angelic Caregivers</a>\n\t\t\t\t<!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" (click)=\"isMenuCollapsed = !isMenuCollapsed\">&#9776;</button>\n\n\t\t\t\t<!-- Step 2: Add the ngbCollapse directive to the element below. -->\n\t\t\t\t<div [ngbCollapse]=\"isMenuCollapsed\" class=\"collapse navbar-collapse\">\n\t\t\t\t\t<ul class=\"navbar-nav\">\n\t\t\t<li class=\"nav-item active\">\n\t\t\t  <a routerLink=\"home\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">What We Do</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t  <a [routerLink]=\"['/contact']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Contact Us</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/value']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Value</a>\n\t\t\t  </li>\n\t\t\t  <li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/mission']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Mission Statement</a>\n\t\t\t  </li>\n\t\t\t  <li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/vision']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Vision</a>\n\t\t\t  </li>\n\t\t\t  <li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/apply']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Job Application</a>\n\t\t\t  </li>\n\t\t  </ul>\n\t\t</div>\n\t  </nav>\n\n"
+module.exports = "<!--div class=\"container\">\n\t<ul ngbNav #nav=\"ngbNav\" [(activeId)]=\"active\" class=\"nav-pills\" name=\"tabs\">\n\t\t<li [ngbNavItem]=\"1\">\n\t\t\t<a ngbNavLink>What We Do</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-what-we-do-exp></app-what-we-do-exp>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"2\">\n\t\t\t<a ngbNavLink>Contact Us</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-contact-us></app-contact-us>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"3\">\n\t\t\t<a ngbNavLink>Value</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t\t<app-value></app-value>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"4\">\n\t\t\t<a ngbNavLink>Vision</a>\n\t\t\t<ng-template ngbNavContent>\n\t\t\t<app-vision></app-vision>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"5\">\n\t\t\t<a ngbNavLink>Mission</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-mission-statement></app-mission-statement>\n\t\t\t</ng-template>\n\t\t</li>\n\t\t<li [ngbNavItem]=\"6\">\n\t\t\t<a ngbNavLink>Apply</a>\n\t\t\t<ng-template ngbNavContent>\t\t\n\t\t\t\t<app-apply></app-apply>\n\t\t\t</ng-template>\n\t\t</li>\n\t</ul>\n\n\n\n\t<div [ngbNavOutlet]=\"nav\" class=\"mt-2\"></div>\n</div-->\n\n\t<nav class=\"navbar navbar-expand-lg navbar-light p-3 rounded-3\" style=\"background-image: linear-gradient(to right,teal, rgb(166,139,158));\">\n\t\t<a class=\"navbar-brand\" >St. Louis Angelic Caregivers</a>\n\t\t\t\t<!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" (click)=\"isMenuCollapsed = !isMenuCollapsed\">&#9776;</button>\n\n\t\t\t\t<!-- Step 2: Add the ngbCollapse directive to the element below. -->\n\t\t\t\t<div [ngbCollapse]=\"isMenuCollapsed\" class=\"collapse navbar-collapse\">\n\t\t\t\t\t<ul class=\"navbar-nav\">\n\t\t\t<li class=\"nav-item active\">\n\t\t\t  <a routerLink=\"home\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">What We Do</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t  <a [routerLink]=\"['/contact']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Contact Us</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/value']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Value</a>\n\t\t\t  </li>\n\t\t\t  <li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/mission']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Mission Statement</a>\n\t\t\t  </li>\n\t\t\t  <li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/vision']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Vision</a>\n\t\t\t  </li>\n\t\t\t  <li class=\"nav-item\">\n\t\t\t\t<a [routerLink]=\"['/apply']\" (click)=\"isMenuCollapsed = !isMenuCollapsed\" class=\"nav-link\">Job Application</a>\n\t\t\t  </li>\n\t\t  </ul>\n\t\t</div>\n\t  </nav>\n\n"
 
 /***/ }),
 
@@ -63,7 +63,7 @@ module.exports = "<!--div class=\"container\">\n\t<ul ngbNav #nav=\"ngbNav\" [(a
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n    <div class=\"carousel-indicators\">\n      <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>\n      <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>\n    </div>\n    <div class=\"carousel-inner\">\n      <div class=\"carousel-item active\">\n        <div class=\"d-flex justify-content-center\"><img src=\"assets/20230307_160528_sized.jpg\" alt=\"care pic 1\"></div>\n        <div class=\"carousel-caption\">\n          <p> Dedicated to elderly care </p>\n        </div>\n        \n      </div>\n      <div class=\"carousel-item\">\n        <div class=\"d-flex justify-content-center\"><img src=\"assets/20230424_073207.jpg\" alt=\"care pic 2\"></div>\n      \n        <div class=\"carousel-caption\">\n          <p> 10+ years of experience </p>\n        </div>\n         \n      </div>\n     \n\n      <!--  d-none d-md block previous and next carousel buttons disappear for mobile-->\n    <button class=\"d-none d-md-block carousel-control-prev\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"prev\">\n      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n      <span class=\"visually-hidden\">Previous</span>\n    </button>\n    <button class=\"d-none d-md-block carousel-control-next\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"next\">\n      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n      <span class=\"visually-hidden\">Next</span>\n    </button>\n  </div>"
+module.exports = "<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n    <div class=\"carousel-indicators\">\n      <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>\n      <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>\n    </div>\n    <div class=\"carousel-inner\">\n      <div class=\"carousel-item active\">\n        <div class=\"d-flex justify-content-center\"><img src=\"assets/20230307_160528_sized.jpg\" alt=\"care pic 1\"></div>\n        <div class=\"carousel-caption\">\n          <p> Dedicated to elderly care </p>\n        </div>\n        \n      </div>\n      <div class=\"carousel-item\">\n        <div class=\"d-flex justify-content-center\"><img src=\"assets/20230424_073207.jpg\" alt=\"care pic 2\"></div>\n      \n        <div class=\"carousel-caption\">\n          <p> 10+ years of experience </p>\n        </div>\n         \n      </div>\n     \n\n      <!--  d-none d-md blocks previous and next carousel buttons disappear for mobile\n      removed altogether for now with d-block after the images were realigned and no longer centered-->\n    <button class=\"d-none d-block carousel-control-prev\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"prev\">\n      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n      <span class=\"visually-hidden\">Previous</span>\n    </button>\n    <button class=\"d-none d-md-block carousel-control-next\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"next\">\n      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n      <span class=\"visually-hidden\">Next</span>\n    </button>\n  </div>"
 
 /***/ }),
 
@@ -86,6 +86,17 @@ module.exports = "<!-- Wrapper container -->\n<div class=\"container py-4\">\n\n
 /***/ (function(module, exports) {
 
 module.exports = "<div class = \"container\" style=\"border:1px solid #ddd;\">\n    24 hours a day, seven days a week.\n    <br>\n    <br>\n    Schedule your Home Care Assessment by calling or using the contact form below\n    <br>\n    <br>\n    Phone Number: (314) 601-4345\n    <br>\n    <br>\n    <app-contact-form></app-contact-form>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/footer/footer.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/footer/footer.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "    <div class=\"footer-bottom\">\n        <div class=\"container\">\n          <div class=\"row\">\n            <div class=\"col-xs-12\">\n              <!--text-center aligned center for all viewport sizes-->\n              <p class=\"text-center\"> &#169; Saint Louis Angelic Caregivers LLC</p>\n            </div>\n          </div>\n        </div>\n      </div>\n  \n    <button type = \"button\" class=\"btn btn-success\" *ngIf=\"isShow\" (click)=\"gotoTop()\"> &uarr; Go Back To Top</button>\n"
 
 /***/ }),
 
@@ -202,7 +213,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div[name=\"bodydiv\"] {\n    font-size: 22px;\n    padding-top:2%;\n  }\ndiv[name=\"all\"] {\n  background-color: rgb(226,228,255) ;\n}\n/*div[name=\"carousel\"]{\n  background-color: rgb(228, 200, 224);\n}*/\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsY0FBYztFQUNoQjtBQUNGO0VBQ0UsbUNBQW1DO0FBQ3JDO0FBRUE7O0VBRUUiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdltuYW1lPVwiYm9keWRpdlwiXSB7XG4gICAgZm9udC1zaXplOiAyMnB4O1xuICAgIHBhZGRpbmctdG9wOjIlO1xuICB9XG5kaXZbbmFtZT1cImFsbFwiXSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjYsMjI4LDI1NSkgO1xufVxuXG4vKmRpdltuYW1lPVwiY2Fyb3VzZWxcIl17XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjgsIDIwMCwgMjI0KTtcbn0qLyJdfQ== */"
+module.exports = "div[name=\"bodydiv\"] {\n    font-size: 22px;\n    padding-top:2%;\n  }\n\n  \ndiv[name=\"all\"] {\n  background-color: rgb(226,228,255) ;\n}\n\n  \n/*div[name=\"carousel\"]{\n  background-color: rgb(228, 200, 224);\n}*/\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsY0FBYztFQUNoQjs7O0FBR0Y7RUFDRSxtQ0FBbUM7QUFDckM7OztBQUVBOztFQUVFIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXZbbmFtZT1cImJvZHlkaXZcIl0ge1xuICAgIGZvbnQtc2l6ZTogMjJweDtcbiAgICBwYWRkaW5nLXRvcDoyJTtcbiAgfVxuXG4gIFxuZGl2W25hbWU9XCJhbGxcIl0ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI2LDIyOCwyNTUpIDtcbn1cblxuLypkaXZbbmFtZT1cImNhcm91c2VsXCJde1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI4LCAyMDAsIDIyNCk7XG59Ki8iXX0= */"
 
 /***/ }),
 
@@ -274,10 +285,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _carousel_carousel_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./carousel/carousel.component */ "./src/app/carousel/carousel.component.ts");
 /* harmony import */ var _apply_apply_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./apply/apply.component */ "./src/app/apply/apply.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
 
 
 
 //import { NgAnimate } from @angular/
+
 
 
 
@@ -312,6 +325,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__["ContactUsComponent"],
             _carousel_carousel_component__WEBPACK_IMPORTED_MODULE_16__["CarouselComponent"],
             _apply_apply_component__WEBPACK_IMPORTED_MODULE_17__["ApplyComponent"],
+            _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbAlertModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbNavModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
@@ -334,7 +348,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n    min-height: 1000px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbHkvYXBwbHkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2FwcGx5L2FwcGx5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICBtaW4taGVpZ2h0OiAxMDAwcHg7XG59Il19 */"
+module.exports = ".container {\n    min-height: 150px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbHkvYXBwbHkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQiIsImZpbGUiOiJzcmMvYXBwL2FwcGx5L2FwcGx5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICBtaW4taGVpZ2h0OiAxNTBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -566,6 +580,73 @@ ContactUsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/footer/footer.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/footer/footer.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "ul { list-style: none; }\n\nbutton {\n    position: fixed;\n    bottom: 5px;\n    right: 5px;\n    font-size: 20px;\n    text-align: center;\n    border-radius: 5px;\n    outline: none;\n  }\n\n.footer-bottom{\n    padding: .25em;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEtBQUssZ0JBQWdCLEVBQUU7O0FBRXZCO0lBQ0ksZUFBZTtJQUNmLFdBQVc7SUFDWCxVQUFVO0lBQ1YsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixrQkFBa0I7SUFDbEIsYUFBYTtFQUNmOztBQUVBO0lBQ0UsY0FBYztFQUNoQiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInVsIHsgbGlzdC1zdHlsZTogbm9uZTsgfVxuXG5idXR0b24ge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDVweDtcbiAgICByaWdodDogNXB4O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIG91dGxpbmU6IG5vbmU7XG4gIH1cblxuICAuZm9vdGVyLWJvdHRvbXtcbiAgICBwYWRkaW5nOiAuMjVlbTtcbiAgfSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/footer/footer.component.ts ***!
+  \********************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FooterComponent = class FooterComponent {
+    constructor() {
+        this.topPosToStartShowing = 250;
+    }
+    ngOnInit() {
+    }
+    checkScroll() {
+        // window의 scroll top
+        // Both window.pageYOffset and document.documentElement.scrollTop returns the same result in all the cases. window.pageYOffset is not supported below IE 9.
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        console.log('[scroll]', scrollPosition);
+        if (scrollPosition >= this.topPosToStartShowing) {
+            this.isShow = true;
+        }
+        else {
+            this.isShow = false;
+        }
+    }
+    // TODO: Cross browsing
+    gotoTop() {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+};
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:scroll')
+], FooterComponent.prototype, "checkScroll", null);
+FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-footer',
+        template: __webpack_require__(/*! raw-loader!./footer.component.html */ "./node_modules/raw-loader/index.js!./src/app/footer/footer.component.html"),
+        styles: [__webpack_require__(/*! ./footer.component.css */ "./src/app/footer/footer.component.css")]
+    })
+], FooterComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/headnav/headnav.component.css":
 /*!***********************************************!*\
   !*** ./src/app/headnav/headnav.component.css ***!
@@ -615,7 +696,7 @@ HeadnavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n    min-height: 1000px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWlzc2lvbi1zdGF0ZW1lbnQvbWlzc2lvbi1zdGF0ZW1lbnQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL21pc3Npb24tc3RhdGVtZW50L21pc3Npb24tc3RhdGVtZW50LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICBtaW4taGVpZ2h0OiAxMDAwcHg7XG59Il19 */"
+module.exports = ".container {\n    min-height: 150px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWlzc2lvbi1zdGF0ZW1lbnQvbWlzc2lvbi1zdGF0ZW1lbnQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQiIsImZpbGUiOiJzcmMvYXBwL21pc3Npb24tc3RhdGVtZW50L21pc3Npb24tc3RhdGVtZW50LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICBtaW4taGVpZ2h0OiAxNTBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -708,7 +789,7 @@ ServicesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n    min-height: 1000px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmFsdWUvdmFsdWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL3ZhbHVlL3ZhbHVlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICBtaW4taGVpZ2h0OiAxMDAwcHg7XG59Il19 */"
+module.exports = ".container {\n    min-height: 300px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmFsdWUvdmFsdWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQiIsImZpbGUiOiJzcmMvYXBwL3ZhbHVlL3ZhbHVlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICBtaW4taGVpZ2h0OiAzMDBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -750,7 +831,7 @@ ValueComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n    min-height: 1000px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlzaW9uL3Zpc2lvbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvdmlzaW9uL3Zpc2lvbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XG4gICAgbWluLWhlaWdodDogMTAwMHB4O1xufSJdfQ== */"
+module.exports = ".container {\n    min-height: 300px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlzaW9uL3Zpc2lvbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvdmlzaW9uL3Zpc2lvbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XG4gICAgbWluLWhlaWdodDogMzAwcHg7XG59Il19 */"
 
 /***/ }),
 

@@ -18,7 +18,7 @@ module.exports = [[module.i, "@charset \"UTF-8\";/*!\n * Bootstrap  v5.2.3 (http
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = [[module.i, ".styleclass {\n    \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztBQUVBIiwiZmlsZSI6InNyYy9zdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnN0eWxlY2xhc3Mge1xuICAgIFxufSJdfQ== */", '', '']]
+module.exports = [[module.i, ".styleclass {\n    \n}\n\nhtml { background-color: rgb(226,228,255) ;}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztBQUVBOztBQUVBLE9BQU8sbUNBQW1DLENBQUMiLCJmaWxlIjoic3JjL3N0eWxlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc3R5bGVjbGFzcyB7XG4gICAgXG59XG5cbmh0bWwgeyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI2LDIyOCwyNTUpIDt9Il19 */", '', '']]
 
 /***/ }),
 
