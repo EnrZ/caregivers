@@ -21,14 +21,32 @@ export class ContactFormComponent implements OnInit {
     });
   }
   onSubmit(FormData) {
-    console.log(FormData)
-    this.contact.PostMessage(FormData)
-      .subscribe(response => {
-        location.href = 'https://mailthis.to/confirm'
-        console.log(response)
-      }, error => {
-        console.warn(error.responseText)
-        console.log({ error })
-      })
+    if(this.FormData.valid){
+      console.log(FormData)
+      this.contact.PostMessage(FormData)
+        .subscribe(response => {
+          location.href = 'https://mailthis.to/confirm'
+          console.log(response)
+        }, error => {
+          console.warn(error.responseText)
+          console.log({ error })
+        })
+      
+   } else {
+    //throw error if the required fields aren't valid 
+    this.validateAllFormFields(this.FormData);
+   }
+
+  }
+
+  private validateAllFormFields(formGroup:FormGroup){
+    Object.keys(formGroup.controls).forEach(field=>{
+        const control = formGroup.get(field);
+        if(control instanceof FormControl){
+          control.markAsDirty({onlySelf:true});
+        } else if(control instanceof FormGroup) {
+          this.validateAllFormFields(control)
+        }
+    })
   }
 }
