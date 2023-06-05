@@ -74,7 +74,7 @@ module.exports = "<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Wrapper container -->\n<div class=\"container py-4\">\n\n    <form [formGroup]=\"FormData\" (ngSubmit)=\"onSubmit(FormData.value)\">\n  \n      <div class=\"form-group\">\n      <!-- Name input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"name\">Name</label>\n        <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" \n        name=\"EmailerName\" formControlName=\"EmailerName\"/>\n      </div>\n  \n      <!-- Email address input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n        <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\"\n        name=\"Email\" formControlName=\"Email\" />\n      </div>\n  \n      <!-- Message input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"message\">Message</label>\n        <textarea class=\"form-control\" id=\"message\" type=\"text\" \n        name=\"Message\" formControlName=\"Message\" style=\"height: 10rem;\"></textarea>\n      </div>\n  \n      <!-- Form submit button -->\n      <div class=\"d-grid\">\n        <button class=\"btn btn-primary btn-lg\" type=\"submit\" [disabled]=\"!FormData.valid\">Submit</button>\n      </div>\n    </div>\n    </form>\n  \n  </div>"
+module.exports = "<!-- Wrapper container -->\n<div class=\"container py-4\">\n\n    <form [formGroup]=\"FormData\" (ngSubmit)=\"onSubmit(FormData.value)\">\n  \n      <div class=\"form-group\">\n      <!-- Name input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"name\">Name</label>\n        <input class=\"form-control\" id=\"name\" type=\"text\" [class.error]=\"FormData.controls['EmailerName'].dirty && FormData.hasError('required','EmailerName')\"\n        name=\"EmailerName\" formControlName=\"EmailerName\"/>\n        <small *ngIf=\"FormData.controls['EmailerName'].dirty && FormData.hasError('required','EmailerName')\" class=\"text-danger\">Name is required</small>\n      </div>\n      <!-- Email address input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n        <input class=\"form-control\" id=\"emailAddress\" type=\"email\" [class.error]=\"FormData.controls['Email'].dirty && FormData.hasError('required','Email')\"\n        name=\"Email\" formControlName=\"Email\" />\n        <small *ngIf=\"FormData.controls['Email'].dirty && FormData.hasError('required','Email')\" class=\"text-danger\">Email Address is required</small>\n      </div>\n      <!-- Message input -->\n      <div class=\"mb-3\">\n        <label class=\"form-label\" for=\"message\">Message</label>\n        <textarea class=\"form-control\" id=\"message\" type=\"text\" [class.error]=\"FormData.controls['Message'].dirty && FormData.hasError('required','Message')\"\n        name=\"Message\" formControlName=\"Message\" style=\"height: 10rem;\"></textarea>\n        <small *ngIf=\"FormData.controls['Message'].dirty && FormData.hasError('required','Message')\" class=\"text-danger\">Message is required</small>\n      </div>\n      <!-- Form submit button -->\n      <div class=\"d-grid\">\n        <!--button class=\"btn btn-primary btn-lg\" type=\"submit\" [disabled]=\"!FormData.valid\">Submit</button-->\n        <button class=\"btn btn-primary btn-lg\" type=\"submit\">Submit</button>\n      </div>\n    </div>\n    </form>\n  \n  </div>"
 
 /***/ }),
 
@@ -96,7 +96,7 @@ module.exports = "<div class = \"container\" style=\"border:1px solid #ddd;\">\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    <div class=\"footer-bottom\">\n        <div class=\"container\">\n          <div class=\"row\">\n            <div class=\"col-xs-12\">\n              <!--text-center aligned center for all viewport sizes-->\n              <p class=\"text-center\"> &#169; Saint Louis Angelic Caregivers LLC</p>\n            </div>\n          </div>\n        </div>\n      </div>\n  \n    <button type = \"button\" class=\"btn btn-success\" *ngIf=\"isShow\" (click)=\"gotoTop()\"> &uarr; Go Back To Top</button>\n"
+module.exports = "    <div class=\"footer-bottom\">\n        <div class=\"container\">\n          <div class=\"row\">\n            <div class=\"col-xs-12\">\n              <!--text-center aligned center for all viewport sizes-->\n              <p class=\"text-center\"> &#169; 2023 Saint Louis Angelic Caregivers LLC</p>\n            </div>\n          </div>\n        </div>\n      </div>\n  \n    <button type = \"button\" class=\"btn btn-success\" *ngIf=\"isShow\" (click)=\"gotoTop()\"> \n      <i class='fa fa-arrow-up'></i> Back To Top</button>\n"
 
 /***/ }),
 
@@ -476,7 +476,7 @@ CarouselComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {\n    background-color: teal !important;\n}\n\n.form-control{\n    background-color: rgb(228,230,255);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFjdC1mb3JtL2NvbnRhY3QtZm9ybS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUNBQWlDO0FBQ3JDOztBQUVBO0lBQ0ksa0NBQWtDO0FBQ3RDIiwiZmlsZSI6InNyYy9hcHAvY29udGFjdC1mb3JtL2NvbnRhY3QtZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJ0bi1wcmltYXJ5LCAuYnRuLXByaW1hcnk6aG92ZXIsIC5idG4tcHJpbWFyeTphY3RpdmUsIC5idG4tcHJpbWFyeTp2aXNpdGVkIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0ZWFsICFpbXBvcnRhbnQ7XG59XG5cbi5mb3JtLWNvbnRyb2x7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyOCwyMzAsMjU1KTtcbn0iXX0= */"
+module.exports = ".btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {\n    background-color: teal !important;\n}\n\n.form-control{\n    background-color: rgb(228,230,255);\n}\n\nsmall{\n    font-size:16px;\n}\n\n.form-control.error{\n    border: 1px solid red;\n\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFjdC1mb3JtL2NvbnRhY3QtZm9ybS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUNBQWlDO0FBQ3JDOztBQUVBO0lBQ0ksa0NBQWtDO0FBQ3RDOztBQUVBO0lBQ0ksY0FBYztBQUNsQjs7QUFFQTtJQUNJLHFCQUFxQjs7QUFFekIiLCJmaWxlIjoic3JjL2FwcC9jb250YWN0LWZvcm0vY29udGFjdC1mb3JtLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLXByaW1hcnksIC5idG4tcHJpbWFyeTpob3ZlciwgLmJ0bi1wcmltYXJ5OmFjdGl2ZSwgLmJ0bi1wcmltYXJ5OnZpc2l0ZWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHRlYWwgIWltcG9ydGFudDtcbn1cblxuLmZvcm0tY29udHJvbHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI4LDIzMCwyNTUpO1xufVxuXG5zbWFsbHtcbiAgICBmb250LXNpemU6MTZweDtcbn1cblxuLmZvcm0tY29udHJvbC5lcnJvcntcbiAgICBib3JkZXI6IDFweCBzb2xpZCByZWQ7XG5cbn0iXX0= */"
 
 /***/ }),
 
@@ -511,14 +511,31 @@ let ContactFormComponent = class ContactFormComponent {
         });
     }
     onSubmit(FormData) {
-        console.log(FormData);
-        this.contact.PostMessage(FormData)
-            .subscribe(response => {
-            location.href = 'https://mailthis.to/confirm';
-            console.log(response);
-        }, error => {
-            console.warn(error.responseText);
-            console.log({ error });
+        if (this.FormData.valid) {
+            console.log(FormData);
+            this.contact.PostMessage(FormData)
+                .subscribe(response => {
+                location.href = 'https://mailthis.to/confirm';
+                console.log(response);
+            }, error => {
+                console.warn(error.responseText);
+                console.log({ error });
+            });
+        }
+        else {
+            //throw error if the required fields aren't valid 
+            this.validateAllFormFields(this.FormData);
+        }
+    }
+    validateAllFormFields(formGroup) {
+        Object.keys(formGroup.controls).forEach(field => {
+            const control = formGroup.get(field);
+            if (control instanceof _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]) {
+                control.markAsDirty({ onlySelf: true });
+            }
+            else if (control instanceof _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]) {
+                this.validateAllFormFields(control);
+            }
         });
     }
 };
