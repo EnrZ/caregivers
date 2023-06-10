@@ -5,21 +5,21 @@
   
       <div class="form-group">
       <!-- Name input -->
-      <div class="mb-3">
+      <div class="mb-2">
         <label class="form-label" for="name">Name</label>
         <input class="form-control" id="name" type="text" [class.error]="FormData.controls['EmailerName'].dirty && FormData.hasError('required','EmailerName')"
         name="EmailerName" formControlName="EmailerName"/>
         <small *ngIf="FormData.controls['EmailerName'].dirty && FormData.hasError('required','EmailerName')" class="text-danger">Name is required</small>
       </div>
       <!-- Email address input -->
-      <div class="mb-3">
+      <div class="mb-2">
         <label class="form-label" for="emailAddress">Email Address</label>
         <input class="form-control" id="emailAddress" type="email" [class.error]="FormData.controls['Email'].dirty && FormData.hasError('required','Email')"
         name="Email" formControlName="Email" />
         <small *ngIf="FormData.controls['Email'].dirty && FormData.hasError('required','Email')" class="text-danger">Email Address is required</small>
       </div>
       <!-- Message input -->
-      <div class="mb-3">
+      <div class="mb-2">
         <label class="form-label" for="message">Message</label>
         <textarea class="form-control" id="message" type="text" [class.error]="FormData.controls['Message'].dirty && FormData.hasError('required','Message')"
         name="Message" formControlName="Message" style="height: 10rem;"></textarea>

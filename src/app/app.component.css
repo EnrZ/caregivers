@@ -11,3 +11,11 @@ div[name="all"] {
 /*div[name="carousel"]{
   background-color: rgb(228, 200, 224);
 }*/
+
+  /* RESPONSIVE CSS -------------------------------------------------- */
+  @media (min-width: 992px) {
+    div[name="bodydiv"] {
+      font-size: 17px;
+      padding-top:2%;
+    }
+  }
