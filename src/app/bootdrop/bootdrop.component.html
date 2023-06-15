@@ -52,22 +52,22 @@
 				<div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
 					<ul class="navbar-nav">
 			<li class="nav-item active">
-			  <a routerLink="home" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">What We Do</a>
+			  <a routerLink="home" routerLinkActive="active_route" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">What We Do</a>
 			</li>
 			<li class="nav-item">
-			  <a [routerLink]="['/contact']" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Contact Us</a>
+			  <a [routerLink]="['/contact']" routerLinkActive="active_route" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Contact Us</a>
 			</li>
 			<li class="nav-item">
-				<a [routerLink]="['/value']" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Values</a>
+				<a [routerLink]="['/value']" routerLinkActive="active_route" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Values</a>
 			  </li>
 			  <li class="nav-item">
-				<a [routerLink]="['/mission']" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Mission Statement</a>
+				<a [routerLink]="['/mission']" routerLinkActive="active_route" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Mission Statement</a>
 			  </li>
 			  <li class="nav-item">
-				<a [routerLink]="['/vision']" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Vision</a>
+				<a [routerLink]="['/vision']" routerLinkActive="active_route" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Vision</a>
 			  </li>
 			  <li class="nav-item">
-				<a [routerLink]="['/apply']" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Job Application</a>
+				<a [routerLink]="['/apply']" routerLinkActive="active_route" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">Job Application</a>
 			  </li>
 		  </ul>
 		</div>
