@@ -7,16 +7,6 @@ div[name="tabs"] {
     font-size: 20px;
   }
 
-  ::ng-deep .nav-pills a.nav-link.active, 
-::ng-deep .nav-pills .show > a.nav-link {
-  color:white;
-  background-color: teal;
-}
-:ng-deep .navbar a.nav-link.active, 
-::ng-deep .navbar .show > a.nav-link {
-  background-color:teal;
-}
-
 h1{
   font-size:30px;
 }
@@ -29,4 +19,36 @@ collapse ul li a { color:white }.navbar-brand { color:white }
 
 .active_route {
   text-decoration: overline;
+}
+
+/* the brightness option isnt necessary here but good to know*/
+.navbar {
+  background-image: linear-gradient(to right,teal, rgb(166,139,158));
+  -webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-o-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+	filter: brightness(100%);
+}
+
+.nav-link:hover{
+    -webkit-filter: brightness(85%);
+	-moz-filter: brightness(85%);
+	-o-filter: brightness(85%);
+	-ms-filter: brightness(85%);
+	filter: brightness(85%);
+
+}
+
+
+
+
+::ng-deep .nav-pills a.nav-link.active, 
+::ng-deep .nav-pills .show > a.nav-link {
+  color:white;
+  background-color: teal;
+}
+:ng-deep .navbar a.nav-link.active, 
+::ng-deep .navbar .show > a.nav-link {
+  background-color:teal;
 }
