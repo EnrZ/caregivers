@@ -6,6 +6,7 @@ div[name="bodydiv"] {
   
 div[name="all"] {
   background-color: rgb(226,228,255) ;
+  padding-bottom:103%;
 }
 
 /*div[name="carousel"]{
