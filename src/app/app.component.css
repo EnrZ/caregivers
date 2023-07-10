@@ -8,6 +8,12 @@ div[name="all"] {
   background-color: rgb(226,228,255) ;
   padding-bottom:13%;
 }
+/*moved footer down for 4k(2160 width) */
+@media (min-width:2100px) {
+  div[name="all"] {
+    padding-bottom:30%;
+  }
+}
 
 /*div[name="carousel"]{
   background-color: rgb(228, 200, 224);
