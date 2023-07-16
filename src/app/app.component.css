@@ -1,5 +1,4 @@
 div[name="bodydiv"] {
-    font-size: 22px;
     padding-top:2%;
   }
 
@@ -8,10 +7,12 @@ div[name="all"] {
   background-color: rgb(226,228,255) ;
   padding-bottom:13%;
 }
+ /* RESPONSIVE CSS -------------------------------------------------- */
 /*moved footer down for 4k(2160 width) */
 @media (min-width:2100px) {
   div[name="all"] {
-    padding-bottom:30%;
+    font-size:28px;
+    padding-bottom:36%;
   }
 }
 
@@ -19,10 +20,4 @@ div[name="all"] {
   background-color: rgb(228, 200, 224);
 }*/
 
-  /* RESPONSIVE CSS -------------------------------------------------- */
-  @media (min-width: 992px) {
-    div[name="bodydiv"] {
-      font-size: 17px;
-      padding-top:2%;
-    }
-  }
+ 
