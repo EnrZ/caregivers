@@ -10,11 +10,17 @@ div[name="all"] {
  /* RESPONSIVE CSS -------------------------------------------------- */
 /*moved footer down for 4k(2160 width) */
 @media (min-width:2100px) {
-  div[name="all"] {
-    font-size:28px;
+  div[name="bodydiv"] {
+    font-size:24px;
     padding-bottom:36%;
   }
 }
+@media (max-width:1100px) {
+  div[name="bodydiv"] {
+    font-size:22px;
+  }
+}
+
 
 /*div[name="carousel"]{
   background-color: rgb(228, 200, 224);
