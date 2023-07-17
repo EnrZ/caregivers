@@ -16,7 +16,9 @@ div[name="all"] {
     padding-bottom:32%;
   }
 }
-@media (max-width:1100px) {
+
+/*should be less than 1080*/
+@media (max-width:900px) {
   div[name="bodydiv"] {
     font-size:22px;
   }
