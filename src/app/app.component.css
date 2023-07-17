@@ -1,4 +1,5 @@
 div[name="bodydiv"] {
+    font-size:17px;
     padding-top:2%;
   }
 
@@ -8,11 +9,11 @@ div[name="all"] {
   padding-bottom:13%;
 }
  /* RESPONSIVE CSS -------------------------------------------------- */
-/*moved footer down for 4k(2160 width) */
-@media (min-width:2100px) {
+/*moved footer down for 4k(3840 width) */
+@media (min-width:3800px) {
   div[name="bodydiv"] {
     font-size:24px;
-    padding-bottom:36%;
+    padding-bottom:32%;
   }
 }
 @media (max-width:1100px) {
@@ -20,7 +21,9 @@ div[name="all"] {
     font-size:22px;
   }
 }
+/*i should try to take a @media between those two with 17 font
 
+also given ultrawide montiors, I should try if max-height works for bootstrap*/
 
 /*div[name="carousel"]{
   background-color: rgb(228, 200, 224);

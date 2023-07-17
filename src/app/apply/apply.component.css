@@ -4,3 +4,9 @@
 .card{
     background-color: rgb(226,228,255) ;
   }
+
+  @media (min-width:2100px) {
+    div[name="component-sec"] {
+      padding-bottom:32%;
+    }
+  }

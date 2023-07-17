@@ -41,7 +41,7 @@ module.exports = "<div name = \"all\">\n\n  <app-bootdrop></app-bootdrop>\n  <di
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class = \"card\">\n        <div class = \"card-body\">\nTo apply to work for Saint Louis Angelic Caregivers, download and fill out\n<code><a target=\"_self\" href=\"../../assets/AngelCareApplication.pdf\" download=\"AngelCareApplication.pdf\">this</a> </code>\npdf.\n\nEmail the completed file to <code>apply@stlangelcare.com</code>\n</div>\n</div>\n</div>"
+module.exports = "<div  name = \"component-sec\" class=\"container\">\n    <div class = \"card\">\n        <div class = \"card-body\">\nTo apply to work for Saint Louis Angelic Caregivers, download and fill out\n<code><a target=\"_self\" href=\"../../assets/AngelCareApplication.pdf\" download=\"AngelCareApplication.pdf\">this</a> </code>\npdf.\n\nEmail the completed file to <code>apply@stlangelcare.com</code>\n</div>\n</div>\n</div>"
 
 /***/ }),
 
@@ -118,7 +118,7 @@ module.exports = "<div class =\"p-3 bg-light rounded-3\" name=\"head\">\n       
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n<div class = \"card\">\n    <div class = \"card-body\">\nWe strive to offer the highest level of professionalism, services, and support to our clients in order that our clients live independently.\n</div>\n</div>\n</div>"
+module.exports = "<div name = \"component-sec\" class=\"container\">\n<div class = \"card\">\n    <div class = \"card-body\">\nWe strive to offer the highest level of professionalism, services, and support to our clients in order that our clients live independently.\n</div>\n</div>\n</div>"
 
 /***/ }),
 
@@ -129,7 +129,7 @@ module.exports = "<div class=\"container\">\n<div class = \"card\">\n    <div cl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"container\">\n   <div class = \"card\">\n       <div class = \"card-body\">\n        Integrity - We establish and preserve trust with all clients by applying our knowledge and skills fairly.\n     <br>\n     <br>\n        Professionalism- We are knowledgeable, accurate, conscientious, innovative, and service-oriented.\n     <br>\n     <br>\n\n        Respect- We interact with people in a way that makes them feel heard and valued. We Listen and respond wholeheartedly.\n     <br>\n     <br>\n        Collaboration- We recognize and act on opportunities to work together to deliver our company’s best. We consult, and share ideas, fostering innovation to improve the service experience, both internally and externally.\n     \n        </div>\n        </div>\n</div>"
+module.exports = "   <div name = \"component-sec\" class = \"container\">\n      <div class = \"card\">\n         <div class = \"card-body\">\n         Integrity - We establish and preserve trust with all clients by applying our knowledge and skills fairly.\n      <br>\n      <br>\n         Professionalism- We are knowledgeable, accurate, conscientious, innovative, and service-oriented.\n      <br>\n      <br>\n\n         Respect- We interact with people in a way that makes them feel heard and valued. We Listen and respond wholeheartedly.\n      <br>\n      <br>\n         Collaboration- We recognize and act on opportunities to work together to deliver our company’s best. We consult, and share ideas, fostering innovation to improve the service experience, both internally and externally.\n      \n         </div>\n         </div>\n   </div>"
 
 /***/ }),
 
@@ -140,7 +140,7 @@ module.exports = "<div class = \"container\">\n   <div class = \"card\">\n      
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class = \"card\">\n        <div class = \"card-body\">\nPeople of different generations are heard, valued, and cared for. Our vision is to become a great trusted name and home care provider of choice in the St. Louis area. Our experienced and dedicated caregivers will continue to promote well-being through support and active daily interation with our clients and their relatives.\n</div>"
+module.exports = "<div name = \"component-sec\"  class=\"container\">\n    <div class = \"card\">\n        <div class = \"card-body\">\nPeople of different generations are heard, valued, and cared for. Our vision is to become a great trusted name and home care provider of choice in the St. Louis area. Our experienced and dedicated caregivers will continue to promote well-being through support and active daily interation with our clients and their relatives.\n</div>"
 
 /***/ }),
 
@@ -213,7 +213,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div[name=\"bodydiv\"] {\n    padding-top:2%;\n  }\n\n  \ndiv[name=\"all\"] {\n  background-color: rgb(226,228,255) ;\n  padding-bottom:13%;\n}\n\n  \n/* RESPONSIVE CSS -------------------------------------------------- */\n\n  \n/*moved footer down for 4k(2160 width) */\n\n  \n@media (min-width:2100px) {\n  div[name=\"bodydiv\"] {\n    font-size:24px;\n    padding-bottom:36%;\n  }\n}\n\n  \n@media (max-width:1100px) {\n  div[name=\"bodydiv\"] {\n    font-size:22px;\n  }\n}\n\n  \n/*div[name=\"carousel\"]{\n  background-color: rgb(228, 200, 224);\n}*/\n\n \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxjQUFjO0VBQ2hCOzs7QUFHRjtFQUNFLG1DQUFtQztFQUNuQyxrQkFBa0I7QUFDcEI7OztBQUNDLHNFQUFzRTs7O0FBQ3ZFLHdDQUF3Qzs7O0FBQ3hDO0VBQ0U7SUFDRSxjQUFjO0lBQ2Qsa0JBQWtCO0VBQ3BCO0FBQ0Y7OztBQUNBO0VBQ0U7SUFDRSxjQUFjO0VBQ2hCO0FBQ0Y7OztBQUdBOztFQUVFIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXZbbmFtZT1cImJvZHlkaXZcIl0ge1xuICAgIHBhZGRpbmctdG9wOjIlO1xuICB9XG5cbiAgXG5kaXZbbmFtZT1cImFsbFwiXSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjYsMjI4LDI1NSkgO1xuICBwYWRkaW5nLWJvdHRvbToxMyU7XG59XG4gLyogUkVTUE9OU0lWRSBDU1MgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cbi8qbW92ZWQgZm9vdGVyIGRvd24gZm9yIDRrKDIxNjAgd2lkdGgpICovXG5AbWVkaWEgKG1pbi13aWR0aDoyMTAwcHgpIHtcbiAgZGl2W25hbWU9XCJib2R5ZGl2XCJdIHtcbiAgICBmb250LXNpemU6MjRweDtcbiAgICBwYWRkaW5nLWJvdHRvbTozNiU7XG4gIH1cbn1cbkBtZWRpYSAobWF4LXdpZHRoOjExMDBweCkge1xuICBkaXZbbmFtZT1cImJvZHlkaXZcIl0ge1xuICAgIGZvbnQtc2l6ZToyMnB4O1xuICB9XG59XG5cblxuLypkaXZbbmFtZT1cImNhcm91c2VsXCJde1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI4LCAyMDAsIDIyNCk7XG59Ki9cblxuICJdfQ== */"
+module.exports = "div[name=\"bodydiv\"] {\n    font-size:17px;\n    padding-top:2%;\n  }\n\n  \ndiv[name=\"all\"] {\n  background-color: rgb(226,228,255) ;\n  padding-bottom:13%;\n}\n\n  \n/* RESPONSIVE CSS -------------------------------------------------- */\n\n  \n/*moved footer down for 4k(3840 width) */\n\n  \n@media (min-width:3800px) {\n  div[name=\"bodydiv\"] {\n    font-size:24px;\n    padding-bottom:32%;\n  }\n}\n\n  \n@media (max-width:1100px) {\n  div[name=\"bodydiv\"] {\n    font-size:22px;\n  }\n}\n\n  \n/*i should try to take a @media between those two with 17 font\n\nalso given ultrawide montiors, I should try if max-height works for bootstrap*/\n\n  \n/*div[name=\"carousel\"]{\n  background-color: rgb(228, 200, 224);\n}*/\n\n \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxjQUFjO0lBQ2QsY0FBYztFQUNoQjs7O0FBR0Y7RUFDRSxtQ0FBbUM7RUFDbkMsa0JBQWtCO0FBQ3BCOzs7QUFDQyxzRUFBc0U7OztBQUN2RSx3Q0FBd0M7OztBQUN4QztFQUNFO0lBQ0UsY0FBYztJQUNkLGtCQUFrQjtFQUNwQjtBQUNGOzs7QUFDQTtFQUNFO0lBQ0UsY0FBYztFQUNoQjtBQUNGOzs7QUFDQTs7OEVBRThFOzs7QUFFOUU7O0VBRUUiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdltuYW1lPVwiYm9keWRpdlwiXSB7XG4gICAgZm9udC1zaXplOjE3cHg7XG4gICAgcGFkZGluZy10b3A6MiU7XG4gIH1cblxuICBcbmRpdltuYW1lPVwiYWxsXCJdIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNiwyMjgsMjU1KSA7XG4gIHBhZGRpbmctYm90dG9tOjEzJTtcbn1cbiAvKiBSRVNQT05TSVZFIENTUyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSAqL1xuLyptb3ZlZCBmb290ZXIgZG93biBmb3IgNGsoMzg0MCB3aWR0aCkgKi9cbkBtZWRpYSAobWluLXdpZHRoOjM4MDBweCkge1xuICBkaXZbbmFtZT1cImJvZHlkaXZcIl0ge1xuICAgIGZvbnQtc2l6ZToyNHB4O1xuICAgIHBhZGRpbmctYm90dG9tOjMyJTtcbiAgfVxufVxuQG1lZGlhIChtYXgtd2lkdGg6MTEwMHB4KSB7XG4gIGRpdltuYW1lPVwiYm9keWRpdlwiXSB7XG4gICAgZm9udC1zaXplOjIycHg7XG4gIH1cbn1cbi8qaSBzaG91bGQgdHJ5IHRvIHRha2UgYSBAbWVkaWEgYmV0d2VlbiB0aG9zZSB0d28gd2l0aCAxNyBmb250XG5cbmFsc28gZ2l2ZW4gdWx0cmF3aWRlIG1vbnRpb3JzLCBJIHNob3VsZCB0cnkgaWYgbWF4LWhlaWdodCB3b3JrcyBmb3IgYm9vdHN0cmFwKi9cblxuLypkaXZbbmFtZT1cImNhcm91c2VsXCJde1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI4LCAyMDAsIDIyNCk7XG59Ki9cblxuICJdfQ== */"
 
 /***/ }),
 
@@ -348,7 +348,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n    min-height: 150px;\n}\n.card{\n    background-color: rgb(226,228,255) ;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbHkvYXBwbHkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksbUNBQW1DO0VBQ3JDIiwiZmlsZSI6InNyYy9hcHAvYXBwbHkvYXBwbHkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICAgIG1pbi1oZWlnaHQ6IDE1MHB4O1xufVxuLmNhcmR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNiwyMjgsMjU1KSA7XG4gIH0iXX0= */"
+module.exports = ".container {\n    min-height: 150px;\n}\n.card{\n    background-color: rgb(226,228,255) ;\n  }\n@media (min-width:2100px) {\n    div[name=\"component-sec\"] {\n      padding-bottom:32%;\n    }\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbHkvYXBwbHkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksbUNBQW1DO0VBQ3JDO0FBRUE7SUFDRTtNQUNFLGtCQUFrQjtJQUNwQjtFQUNGIiwiZmlsZSI6InNyYy9hcHAvYXBwbHkvYXBwbHkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICAgIG1pbi1oZWlnaHQ6IDE1MHB4O1xufVxuLmNhcmR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNiwyMjgsMjU1KSA7XG4gIH1cblxuICBAbWVkaWEgKG1pbi13aWR0aDoyMTAwcHgpIHtcbiAgICBkaXZbbmFtZT1cImNvbXBvbmVudC1zZWNcIl0ge1xuICAgICAgcGFkZGluZy1ib3R0b206MzIlO1xuICAgIH1cbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -713,7 +713,7 @@ HeadnavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n    min-height: 150px;\n}\n.card{\n    background-color: rgb(226,228,255) ;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWlzc2lvbi1zdGF0ZW1lbnQvbWlzc2lvbi1zdGF0ZW1lbnQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksbUNBQW1DO0VBQ3JDIiwiZmlsZSI6InNyYy9hcHAvbWlzc2lvbi1zdGF0ZW1lbnQvbWlzc2lvbi1zdGF0ZW1lbnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICAgIG1pbi1oZWlnaHQ6IDE1MHB4O1xufVxuLmNhcmR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNiwyMjgsMjU1KSA7XG4gIH0iXX0= */"
+module.exports = ".container {\n    min-height: 150px;\n}\n.card{\n    background-color: rgb(226,228,255) ;\n  }\n@media (min-width:2100px) {\n    div[name=\"component-sec\"] {\n      padding-bottom:32%;\n    }\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWlzc2lvbi1zdGF0ZW1lbnQvbWlzc2lvbi1zdGF0ZW1lbnQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksbUNBQW1DO0VBQ3JDO0FBRUE7SUFDRTtNQUNFLGtCQUFrQjtJQUNwQjtFQUNGIiwiZmlsZSI6InNyYy9hcHAvbWlzc2lvbi1zdGF0ZW1lbnQvbWlzc2lvbi1zdGF0ZW1lbnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICAgIG1pbi1oZWlnaHQ6IDE1MHB4O1xufVxuLmNhcmR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNiwyMjgsMjU1KSA7XG4gIH1cblxuICBAbWVkaWEgKG1pbi13aWR0aDoyMTAwcHgpIHtcbiAgICBkaXZbbmFtZT1cImNvbXBvbmVudC1zZWNcIl0ge1xuICAgICAgcGFkZGluZy1ib3R0b206MzIlO1xuICAgIH1cbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -806,7 +806,7 @@ ServicesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n    min-height: 300px;\n}\n\n.card{\n    background-color: rgb(226,228,255) ;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmFsdWUvdmFsdWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLG1DQUFtQztFQUNyQyIsImZpbGUiOiJzcmMvYXBwL3ZhbHVlL3ZhbHVlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgICBtaW4taGVpZ2h0OiAzMDBweDtcbn1cblxuLmNhcmR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNiwyMjgsMjU1KSA7XG4gIH0iXX0= */"
+module.exports = ".container {\n    min-height: 300px;\n}\n\n.card{\n    background-color: rgb(226,228,255) ;\n  }\n\n@media (min-width:2100px) {\n    div[name=\"component-sec\"] {\n      padding-bottom:25%;\n    }\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmFsdWUvdmFsdWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLG1DQUFtQztFQUNyQzs7QUFFQTtJQUNFO01BQ0Usa0JBQWtCO0lBQ3BCO0VBQ0YiLCJmaWxlIjoic3JjL2FwcC92YWx1ZS92YWx1ZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XG4gICAgbWluLWhlaWdodDogMzAwcHg7XG59XG5cbi5jYXJke1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjYsMjI4LDI1NSkgO1xuICB9XG5cbiAgQG1lZGlhIChtaW4td2lkdGg6MjEwMHB4KSB7XG4gICAgZGl2W25hbWU9XCJjb21wb25lbnQtc2VjXCJdIHtcbiAgICAgIHBhZGRpbmctYm90dG9tOjI1JTtcbiAgICB9XG4gIH0iXX0= */"
 
 /***/ }),
 
@@ -848,7 +848,7 @@ ValueComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n    min-height: 300px;\n}\n\n.card{\n    background-color: rgb(226,228,255) ;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlzaW9uL3Zpc2lvbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksbUNBQW1DO0VBQ3JDIiwiZmlsZSI6InNyYy9hcHAvdmlzaW9uL3Zpc2lvbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XG4gICAgbWluLWhlaWdodDogMzAwcHg7XG59XG5cbi5jYXJke1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjYsMjI4LDI1NSkgO1xuICB9Il19 */"
+module.exports = ".container {\n    min-height: 300px;\n}\n\n.card{\n    background-color: rgb(226,228,255) ;\n  }\n\n@media (min-width:2100px) {\n    div[name=\"component-sec\"] {\n      padding-bottom:30%;\n    }\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlzaW9uL3Zpc2lvbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksbUNBQW1DO0VBQ3JDOztBQUVBO0lBQ0U7TUFDRSxrQkFBa0I7SUFDcEI7RUFDRiIsImZpbGUiOiJzcmMvYXBwL3Zpc2lvbi92aXNpb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICAgIG1pbi1oZWlnaHQ6IDMwMHB4O1xufVxuXG4uY2FyZHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI2LDIyOCwyNTUpIDtcbiAgfVxuXG4gIEBtZWRpYSAobWluLXdpZHRoOjIxMDBweCkge1xuICAgIGRpdltuYW1lPVwiY29tcG9uZW50LXNlY1wiXSB7XG4gICAgICBwYWRkaW5nLWJvdHRvbTozMCU7XG4gICAgfVxuICB9Il19 */"
 
 /***/ }),
 
