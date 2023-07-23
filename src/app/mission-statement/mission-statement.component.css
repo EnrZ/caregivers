@@ -5,8 +5,8 @@
     background-color: rgb(226,228,255) ;
   }
 
-  @media (min-width:2100px) {
+  @media (min-width:2000px) {
     div[name="component-sec"] {
-      padding-bottom:32%;
+      padding-bottom:40%;
     }
   }

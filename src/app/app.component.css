@@ -10,10 +10,9 @@ div[name="all"] {
 }
  /* RESPONSIVE CSS -------------------------------------------------- */
 /*moved footer down for 4k(3840 width) */
-@media (min-width:3800px) {
+@media (min-width:2000px) {
   div[name="bodydiv"] {
-    font-size:24px;
-    padding-bottom:32%;
+    padding-bottom:12%;
   }
 }
 
