@@ -337,7 +337,7 @@ var AppModule = /** @class */ (function () {
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbCollapseModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_18__["AppRoutingModule"]
                 // RouterModule.forRoot(routes)
             ],
-            providers: [],
+            providers: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);

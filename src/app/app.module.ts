@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Meta } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //import { NgAnimate } from @angular/
 
@@ -46,7 +46,7 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule, NgbCollapseModule, AppRoutingModule
    // RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [Meta],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
