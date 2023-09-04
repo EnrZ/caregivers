@@ -640,14 +640,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var FooterComponent = /** @class */ (function () {
     function FooterComponent() {
+        //250 from the top, the button appears. More scrolling needs to before button appears if number is made bigger.
         this.topPosToStartShowing = 250;
     }
     FooterComponent.prototype.ngOnInit = function () {
     };
     FooterComponent.prototype.checkScroll = function () {
-        // window의 scroll top
-        // Both window.pageYOffset and document.documentElement.scrollTop returns the same result in all the cases. window.pageYOffset is not supported below IE 9.
-        var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop || 0;
         console.log('[scroll]', scrollPosition);
         if (scrollPosition >= this.topPosToStartShowing) {
             this.isShow = true;
@@ -932,13 +931,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WhatWeDoExpComponent", function() { return WhatWeDoExpComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
 
 
 var WhatWeDoExpComponent = /** @class */ (function () {
-    function WhatWeDoExpComponent() {
+    function WhatWeDoExpComponent(metaService) {
+        this.metaService = metaService;
     }
     WhatWeDoExpComponent.prototype.ngOnInit = function () {
+        this.metaService.addTag({ name: 'keywords', content: "Saint Louis Caregivers, Caregivers, St. Louis Caregivers, Angelic Caregivers, Elder Care, Elderly Care, Independent Living" });
     };
+    WhatWeDoExpComponent.ctorParameters = function () { return [
+        { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Meta"] }
+    ]; };
     WhatWeDoExpComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-what-we-do-exp',

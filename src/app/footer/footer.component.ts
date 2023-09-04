@@ -13,15 +13,13 @@ export class FooterComponent implements OnInit {
   }
 
   isShow: boolean;
+  //250 from the top, the button appears. More scrolling needs to before button appears if number is made bigger.
   topPosToStartShowing = 250;
 
   @HostListener('window:scroll')
   checkScroll() {
-      
-    // window의 scroll top
-    // Both window.pageYOffset and document.documentElement.scrollTop returns the same result in all the cases. window.pageYOffset is not supported below IE 9.
 
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop || 0;
 
     console.log('[scroll]', scrollPosition);
     

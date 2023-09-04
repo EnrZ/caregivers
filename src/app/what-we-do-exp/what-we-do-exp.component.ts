@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, MetaDefinition } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-what-we-do-exp',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatWeDoExpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private metaService:Meta) { }
 
   ngOnInit() {
+    this.metaService.addTag( { name:'keywords',content:"Saint Louis Caregivers, Caregivers, St. Louis Caregivers, Angelic Caregivers, Elder Care, Elderly Care, Independent Living"});
   }
 
 }
