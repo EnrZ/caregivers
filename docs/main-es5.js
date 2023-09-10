@@ -941,6 +941,7 @@ var WhatWeDoExpComponent = /** @class */ (function () {
     }
     WhatWeDoExpComponent.prototype.ngOnInit = function () {
         this.metaService.addTag({ name: 'keywords', content: "Saint Louis Caregivers, Caregivers, St. Louis Caregivers, Angelic Caregivers, Elder Care, Elderly Care, Independent Living" });
+        this.metaService.addTag({ name: 'description', content: "Saint Louis Angelic Caregivers is a company commited to providing great care and ensuring that you or your family member is being well cared for while helping them to remain independent" });
     };
     WhatWeDoExpComponent.ctorParameters = function () { return [
         { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Meta"] }

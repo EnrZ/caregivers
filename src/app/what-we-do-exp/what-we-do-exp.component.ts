@@ -12,6 +12,7 @@ export class WhatWeDoExpComponent implements OnInit {
 
   ngOnInit() {
     this.metaService.addTag( { name:'keywords',content:"Saint Louis Caregivers, Caregivers, St. Louis Caregivers, Angelic Caregivers, Elder Care, Elderly Care, Independent Living"});
+    this.metaService.addTag( { name:'description',content:"Saint Louis Angelic Caregivers is a company commited to providing great care and ensuring that you or your family member is being well cared for while helping them to remain independent"});
   }
 
 }
