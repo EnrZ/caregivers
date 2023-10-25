@@ -25,6 +25,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { ApplyComponent } from './apply/apply.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
+import { TestimonialsComponent } from './extra-components/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { FooterComponent } from './footer/footer.component';
     CarouselComponent,
     ApplyComponent,
     FooterComponent,
+    TestimonialsComponent,
   ],
   imports: [
     BrowserModule, NgbAlertModule,BrowserAnimationsModule,NgbNavModule,FormsModule,ReactiveFormsModule,
