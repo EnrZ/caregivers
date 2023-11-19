@@ -40,8 +40,26 @@ collapse ul li a { color:white }.navbar-brand { color:white }
 
 }
 
+@media (min-width: 400px) {
+.navbar-nav {
+  float:none;
+  margin:0 auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-brand{
+  background-color:blue;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+  float:none;
+}
 
 
+
+}
 
 ::ng-deep .nav-pills a.nav-link.active, 
 ::ng-deep .nav-pills .show > a.nav-link {
