@@ -22,6 +22,8 @@ div[name="all"] {
     font-size:22px;
   }
 }
+
+
 /*i should try to take a @media between those two with 17 font
 
 also given ultrawide montiors, I should try if max-height works for bootstrap*/
