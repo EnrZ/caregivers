@@ -47,14 +47,15 @@
 		
 				<!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
 				<button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
-
+				<a class="navbar-brand d-lg-none d-xl-none d-xxl-none" >St. Louis Angelic Caregivers</a>
 				<!-- Step 2: Add the ngbCollapse directive to the element below. -->
 				<div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
 					<ul class="navbar-nav">
 					
 						<li>
-							<a class="navbar-brand" >St. Louis Angelic Caregivers</a>
+							<a class="navbar-brand d-none d-lg-block" >St. Louis Angelic Caregivers</a>
 						</li>
+						
 			<li class="nav-item active">
 			  <a routerLink="home" routerLinkActive="active_route" (click)="isMenuCollapsed = !isMenuCollapsed" class="nav-link">What We Do</a>
 			</li>
