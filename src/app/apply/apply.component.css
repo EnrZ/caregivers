@@ -8,6 +8,6 @@
   /* 2000px maximum bootstrap*/
   @media (min-width:2000px) {
     div[name="component-sec"] {
-      padding-bottom:40%;
+      padding-bottom:85%;
     }
   }
