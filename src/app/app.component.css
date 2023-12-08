@@ -3,6 +3,10 @@ div[name="bodydiv"] {
     padding-top:2%;
   }
 
+div[name="bigscreenpad"] {
+  padding-top:1%;
+}
+
   
 div[name="all"] {
   background-color: rgb(226,228,255) ;
