@@ -6,7 +6,7 @@
     background-color: rgb(226,228,255) ;
   }
 
-  @media (min-width:2100px) {
+  @media (min-width:1920px) {
     div[name="component-sec"] {
       padding-bottom:75%;
     }

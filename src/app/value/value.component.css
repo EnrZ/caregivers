@@ -6,8 +6,14 @@
     background-color: rgb(226,228,255) ;
   }
 
-  @media (min-width:2100px) {
+  @media (min-width:1920px) {
     div[name="component-sec"] {
-      padding-bottom:35%;
+      padding-bottom:55%;
     }
   }
+
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    div[name="component-sec"] {
+      padding-bottom:67%;
+    }
+    }

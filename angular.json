@@ -70,6 +70,7 @@
             "production": {
               "browserTarget": "caregivers-angular:build:production"
             }
+            
           }
         },
         "extract-i18n": {
