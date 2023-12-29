@@ -11,16 +11,14 @@ body {
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
-
   
-  /* Declare heights because of positioning of img element */
   .carousel-item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 250px;
   } 
 
+    /* Declare height because of positioning of img element */
     .carousel-caption p {
       margin-bottom: 1.25rem;
       font-size: 24px;
