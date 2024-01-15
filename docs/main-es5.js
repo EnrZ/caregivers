@@ -85,7 +85,7 @@ module.exports = "<!-- Wrapper container -->\n<div class=\"container py-4\">\n\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n    \n        <div class = \"container\">\n        <div class = \"card\">\n            <div class = \"card-body\">\n                24 hours a day, seven days a week.\n                <br>\n                Schedule your Home Care Assessment by calling or using the contact form below.\n                <br>\n                <br>\n                Phone Number: (314) 601-4345\n              \n        </div>\n    </div>\n</div>\n\n<br>\n\n<div name = \"component-sec\" class = \"container\">\n    <div class = \"card\">\n        <div class = \"card-body\">\n<app-contact-form></app-contact-form>\n</div></div></div>"
+module.exports = "\n    \n        <div class = \"container\">\n        <div class = \"card\">\n            <div class = \"card-body\">\n                24 hours a day, seven days a week.\n                <br>\n                Schedule your Home Care Assessment by calling or sending an email to <code><a href=mailto:“contact@stlangelcare.com”>contact@stlangelcare.com</a></code>\n                <br>\n                <br>\n                Phone Number: (314) 601-4345\n              \n        </div>\n    </div>\n</div>\n\n<br>\n\n<!--div name = \"component-sec\" class = \"container\">\n    <div class = \"card\">\n        <div class = \"card-body\">\n<app-contact-form></app-contact-form>\n</div></div></div-->"
 
 /***/ }),
 
